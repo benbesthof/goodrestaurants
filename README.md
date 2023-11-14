@@ -5,3 +5,5 @@ Should restaurateurs, with a specialization in a specific cuisine, consider open
 Should restaurateurs consider cuisine specialization based off menu price fluctuations over time?  
 ## Team 
 - [@sauceboss1526](url) 
+- [@VGiannac](https://github.com/VGiannac)
+
