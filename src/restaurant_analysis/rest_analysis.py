@@ -26,7 +26,7 @@ class Scrape:
             websiteurl(str): url of chosen website
         Returns:
             landing of tabular data in pandas dataframe """
-        self.df = pd.read_html(websiteurl)[0]
+        self.df = pd.read_html(websiteurl)
     
     def reader(self):
         """ Create pandas df object  
@@ -66,7 +66,7 @@ class Ranalytics:
         Returns:
             Preprocessed dataframe"""
 
-        self.df.good_restaurant = [lambda x: 1 if ]
+        #self.df.good_restaurant = [lambda x: 1 if ]
         categorical_variables = [i for i in self.df.select_dtypes(include = object)]
         numerical_variables = [i for i in self.df.select_dtypes(exclude = object)]
         dummy_variables = pd.get_dummies(self.f[categorical_variables], drop_first = True, dtype = 'int64')
