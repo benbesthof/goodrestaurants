@@ -19,7 +19,7 @@ class Scrape:
     """ Create DataFrame to land scraped data into Pandas DataFrame
 
         Returns:
-            Reader: creates a pandas dataframe object with scraped tabular data."""
+            Reader: creates a pandas dataframe object with legally scraped tabular data."""
     def __init__(self, websiteurl):
         """
         Args:
