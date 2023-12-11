@@ -13,7 +13,9 @@ from sklearn import preprocessing as pre
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import cross_val_score
 import scipy as sp
-from scipy.cluster.hierarchy import dendrogram, ward 
+from scipy.cluster.hierarchy import dendrogram, ward
+import warnings
+
 
 class Scrape:
     """ Create DataFrame to land scraped data into Pandas DataFrame
@@ -94,3 +96,68 @@ class Ranalytics:
         plt.tick_params(axis = 'x', which = 'both', bottom = 'off', top = 'off', labelbottom = 'off')
         showtime = plt.show()
         return showtime
+
+
+
+class ExploratoryDataAnalysis:
+    """
+    A class for conducting various analyses on a DataFrame.
+    """
+    def __init__(self, data):
+        """
+        Initializes the DataAnalysis object with the provided data.
+        
+        Parameters:
+            data (pd.DataFrame): The data to be analyzed.
+        """
+        self.data = data
+
+    def unique_cuisines(self):
+        """
+        Retrieves the unique values in the 'cuisine' column of the data.
+        
+        Returns:
+        np.ndarray: An array containing unique cuisines.
+        """
+        return self.data['cuisine'].unique()
+
+    def cuisine_value_counts(self):
+        """
+        Counts the occurrences of each unique value in the 'cuisine' column of the data.
+        
+        Returns:
+        pd.Series: A Series containing the counts of unique cuisines.
+        """
+        return self.data['cuisine'].value_counts()
+
+    def unique_boroughs(self):
+        """
+        Retrieves the unique values in the 'borough' column of the data.
+        
+        Returns:
+        np.ndarray: An array containing unique boroughs.
+        """
+        return self.data['borough'].unique()
+
+    def borough_value_counts(self):
+        """
+        Counts the occurrences of each unique value in the 'borough' column of the data.
+        
+        Returns:
+        pd.Series: A Series containing the counts of unique boroughs.
+        """
+        return self.data['borough'].value_counts()
+
+    def bar_plot_cuisine(self):
+        """
+        Creates a horizontal bar plot for the frequency distribution of the 'cuisine' column.
+        """
+        self.data['cuisine'].value_counts().sort_values().plot.barh(title="Freq Dist of Cuisine", rot=0)
+
+    def bar_plot_borough(self):
+        """
+        Creates a horizontal bar plot for the frequency distribution of the 'borough' column.
+        """
+        self.data['borough'].value_counts().sort_values().plot.barh(title="Freq Dist of Borough", rot=0)
+
+    
