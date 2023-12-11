@@ -5,7 +5,7 @@ import csv
 # Yelp Fusion API endpoint
 API_ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 # Your API Key (replace with your actual API key)
-API_KEY = 'cUDi-X8cHtlgplTSopy2RDatH3rGO37tSFJ9lTmHeF2xe2oHGF0F10GQx9A0zoLtChbqmndNwhxMt6kh3zaqUNoN72a5peuofw5R6Z3vr-aI13sptMpxbGg0NCB1ZXYx'
+API_KEY = 'ENTER YOUR API KEY HERE'
 
 def get_restaurant_data(locations, cuisines, term='restaurants', limit=50, save_csv=False, csv_file_path='restaurants.csv'):
     """
