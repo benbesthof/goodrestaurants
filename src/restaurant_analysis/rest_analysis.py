@@ -29,7 +29,7 @@ class Scrape:
         Returns:
             landing of tabular data in pandas dataframe """
         self.df = pd.read_html(websiteurl)
-    
+
     def reader(self):
         """ Create pandas df object  
         Args:
@@ -39,21 +39,105 @@ class Scrape:
             pandas dataframe object of scraped tabular data from U.S Census Bureau website"""
         
         table = self.df[1]
-        return table
-    
+        interest = table.query('Population in ("Population Estimates, July 1, 2022, (V2022)", "White alone, not Hispanic or Latino, percent", "Foreign born persons, percent, 2018-2022", "Median household income (in 2022 dollars), 2018-2022"), "Median Gross Rent, 2018-2022"').copy().reset_index()
+        interest.rename(columns = {'Population' : 'Statistic', 'Unamed 1': 'Staten Island',} inplace = True)
+        return interest
+
     def peprocessor(self):
-        """ Preprocessing of data
+        """ Preprocessing of data for clustering
         
         Args:
             self(series): original dataframe to be analyzed
         
         Returns:
-            Preprocessed dataframe"""
+            Preprocessed dataframe for clustering model"""
+        
+        manhattan_zip_codes = ['10001', '10002', '10003', '10004', '10005',
+                               '10006', '10007', '10009', '10010', '10011',
+                               '10012', '10013', '10014', '10016', '10017',
+                               '10018', '10019', '10020', '10021', '10022',
+                               '10023', '10024', '10025', '10026', '10027',
+                               '10028', '10029', '10030', '10031', '10032',
+                               '10033', '10034', '10035', '10036', '10037',
+                               '10038', '10039', '10040', '10128', '10280']
 
-        #self.good_restaurant = [lambda row: 1 if row self.rating > 2.5 else 0]
+        brooklyn_zip_codes = ['11201', '11203', '11204', '11205', '11206',
+                              '11207', '11208', '11209', '11210', '11211',
+                              '11212', '11213', '11214', '11215', '11216',
+                              '11217', '11218', '11219', '11220', '11221',
+                              '11222', '11223', '11224', '11225', '11226',
+                              '11228', '11229', '11230', '11231', '11232',
+                              '11233', '11234', '11235', '11236', '11237',
+                              '11238', '11239', '11249']
+
+        queens_zip_codes = ['11001', '11004', '11101', '11102', '11103',
+                            '11104', '11105', '11106', '11354', '11355',
+                            '11356', '11357', '11358', '11359', '11360',
+                            '11361', '11362', '11363', '11364', '11365',
+                            '11366', '11367', '11368', '11369', '11370',
+                            '11371', '11372', '11373', '11374', '11375',
+                            '11377', '11378', '11379', '11385', '11411',
+                            '11412', '11413', '11414', '11415', '11416',
+                            '11417', '11418', '11419', '11420', '11421',
+                            '11422', '11423', '11426', '11427', '11428',
+                            '11429', '11430', '11432', '11433', '11434',
+                            '11435', '11436', '11691', '11692', '11693',
+                            '11694', '11697']
+
+        staten_island_zip_codes = ['10301', '10302', '10303', '10304', '10305',
+                                   '10306', '10307', '10308', '10309', '10310',
+                                   '10311', '10312', '10314']
+
+        bronx_zip_codes = ['10451', '10452', '10453', '10454', '10455',
+                           '10456', '10457', '10458', '10459', '10460',
+                           '10461', '10462', '10463', '10464', '10465',
+                           '10466', '10467', '10468', '10469', '10470',
+                           '10471', '10472', '10473', '10474', '10475']
+        rests = self.df
+
+        rests['where'] = rests.apply(lambda row: 'Manhattan' if str(row['zip_code']).strip() in manhattan_zip_codes else(
+            'Brooklyn' if str(row['zip_code']).strip() in brooklyn_zip_codes
+            else(
+                'Queens' if str(row['zip_code']).strip() in queens_zip_codes
+                  else(
+                      'The Bronx' if str(row['zip_code']).strip() in bronx_zip_codes
+                        else(
+                            'Staten Island' if str(row['zip_code']).strip() in staten_island_zip_codes
+                              else 'other')))), axis=1)
+        
+        rests['price'] = rests['price'].apply(lambda x: '1' if x == '$' else ('2' if x == '$$' else ('3' if x == '$$$' else('4' if x == '$$$$' else( '0')))))
+        rests.drop('borough', axis = 1, inplace = True)
+        rests[rests['where'] != 'other'].reset_index(drop=True)
+        rests[rests['price'] != 'Not Available'].reset_index(drop=True)
+        rests.rename(columns = {'where': 'borough'}, inplace = True)
+
+        rests['medincome'] = rests.apply(lambda row: 47036 if row['borough'] == 'The Bronx' else(
+            82431 if row['borough'] == 'Queens' else(
+                96185 if row['borough'] == 'Staten Island' else(
+                    74692 if row['borough'] == 'Brooklyn' else(
+                        99880 if row['borough'] == 'Manhattan' else 0)))), axis = 1)
+        
+        rests['population'] = rests.apply(lambda row: 1379946 if row['borough'] == 'The Bronx' else(
+            2278029 if row['borough'] == 'Queens'   else(
+                491133 if row['borough'] == 'Staten Island' else(
+                    2590516 if row['borough'] == 'Brooklyn' else(
+                        1596273 if row['borough'] == 'Manhattan' else 0)))), axis = 1)
+        
+        rests['foreign born persons pct'] = rests.apply(lambda row: 33.9 if row['borough'] == 'The Bronx' else(
+            47.1 if row['borough'] == 'Queens' else(
+                24.8 if row['borough'] == 'Staten Island' else(
+                    35.3 if row['borough'] == 'Brooklyn' else(
+                        8.1 if row['borough'] == 'Manhattan' else 0)))), axis = 1)
+        
+        rests['whitenolatino'] = rests.apply(lambda row: 8.7  if row['borough'] == 'The Bronx' else(
+            23.9 if row['borough'] == 'Queens' else(
+                8.7 if row['borough'] == 'Staten Island' else(
+                    36.7 if row['borough'] == 'Brooklyn' else(
+                        45.5 if row['borough'] == 'Manhattan' else 0)))), axis = 1)
+        
         categorical_variables = [i for i in self.df.select_dtypes(include = object)]
-        numerical_variables = [i for i in self.df.select_dtypes(exclude = object)]
-        dummy_variables = pd.get_dummies(self.f[categorical_variables], drop_first = True, dtype = 'int64')
+        numerical_variables = [i for i in self.df.select_dtypes(exclude = object) if i != 'zip_code']
+        dummy_variables = pd.get_dummies(self.df[categorical_variables], drop_first = True, dtype = 'int64')
         scaled_numerical_variables = [i for i in numerical_variables]
         scaled_numerical_variables = [i for i in numerical_variables]
         array = self.df[numerical_variables].values
@@ -61,14 +145,16 @@ class Scrape:
         dfscaled = pd.DataFrame(datascaler.fit_transform(array), columns = scaled_numerical_variables)
         datascaler = pre.MinMaxScaler(feature_range = (0,1))
         self.modeldf = pd.concat([dummy_variables, dfscaled], axis = 1)
-        return self.modelf.head()
+        self.df.to_csv('combined_rests_data.csv')
+        self.modeldf.to_csv('hclsutering_data.csv')
+        dataprev = self.modeldf.head()
+        return dataprev
     
 
     def hclustering(self):
         """
           Hierararchical clustering with scipy
-          fitting of scikit learn kmeans clustering model with preprocessed data via pipeline
-
+          fitting of scipy hierarchachal clustering model with preprocessed data
           Args: 
             self(series): original dataframe to be analyzed
           Returns:
