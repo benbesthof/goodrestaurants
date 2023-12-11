@@ -170,33 +170,6 @@ class ExploratoryDataAnalysis:
         plt.xlabel('Rating')
         plt.ylabel('Frequency')
         plt.show()
-        
-    def plot_price_distribution(self):
-        """
-        Creates a histogram for the distribution of price levels.
-        """
-        # Mapping string values of 'price' to numerical values
-        price_mapping = {'$': 1, '$$': 2, '$$$': 3, '$$$$': 4, 'Not Available': 0}
-        self.data['price_level'] = self.data['price'].map(price_mapping)
-
-        # Count the occurrences of each price level
-        price_counts = self.data['price_level'].value_counts().sort_index()
-
-        # Plotting
-        price_counts.plot.bar(title='Bar Plot of Price Levels')
-        plt.xlabel('Price Level')
-        plt.ylabel('Frequency')
-
-        # Adjusting x-axis labels to match the price levels
-        xticks_labels = ['N/A', '$', '$$', '$$$', '$$$$']  # Labels for 0, 1, 2, 3, 4
-        plt.xticks(ticks=range(len(xticks_labels)), labels=xticks_labels)
-
-        plt.show()
-
-
-        
-
-
 
     def plot_cuisine_count(self):
         """
