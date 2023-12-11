@@ -27,7 +27,7 @@ class Scrape:
         Returns:
             landing of tabular data in pandas dataframe """
         self.df = pd.read_html(websiteurl)
-    
+
     def reader(self):
         """ Create pandas df object  
         Args:
@@ -36,22 +36,63 @@ class Scrape:
         Returns: 
             pandas dataframe object of scraped tabular data from U.S Census Bureau website"""
         
-        table = self.df[1]
+        table = self.dataf[1]
+
         return table
+
+class YelpData:
+    """ Create DataFrame from Yelp data in csv"""
+    def __init__(self, dfpath):
+        """ Create pandas df object
+        Args:
+            dataframe(str): pandas dataframe of yelp data 
+        
+        Returns: 
+            pandas dataframe object of yelp data"""
+        self.df = pd.read_csv(dfpath)
+
+    
+
     
     def peprocessor(self):
-        """ Preprocessing of data
+        """ Preprocessing of data for clustering
         
         Args:
             self(series): original dataframe to be analyzed
         
         Returns:
-            Preprocessed dataframe"""
+            Preprocessed dataframe for clustering model"""
 
-        #self.good_restaurant = [lambda row: 1 if row self.rating > 2.5 else 0]
+        self.df['medincome'] = self.df.apply(lambda row: 47036 if self.df[self.df['where'] == 'The Bronx'] else(
+            82431 if self.df[self.df['where'] == 'Queens'] else(
+            96185 if self.df[self.df['where'] == 'Staten Island'] else(
+                74692 if self.df[self.df['where'] == 'Brooklyn'] else(
+                    99880 if self.df[self.df['where'] == 'Manhattan'] else 0)))))
+        
+        self.df['population'] = self.df.apply(lambda row: 1379946 if self.df[self.df['where'] == 'The Bronx'] else(
+            2278029 if self.df[self.df['where'] == 'Queens'] else(
+            491133 if self.df[self.df['where'] == 'Staten Island'] else(
+                2590516 if self.df[self.df['where'] == 'Brooklyn'] else(
+                    1596273 if self.df[self.df['where'] == 'Manhattan'] else 0)))))
+        
+        self.df['foreign born persons pct'] = self.df.apply(lambda row: 33.9 if self.df[self.df['where'] == 'The Bronx'] else(
+            47.1 if self.df[self.df['where'] == 'Queens'] else(
+            24.8 if self.df[self.df['where'] == 'Staten Island'] else(
+                35.3 if self.df[self.df['where'] == 'Brooklyn'] else(
+                    28.1 if self.df[self.df['where'] == 'Manhattan'] else 0)))))
+        
+        self.df['whitenolatino'] = self.df.apply(lambda row: 8.7  if self.df[self.df['where'] == 'The Bronx'] else(
+            23.9 if self.df[self.df['where'] == 'Queens'] else(
+            8.7 if self.df[self.df['where'] == 'Staten Island'] else(
+                36.7 if self.df[self.df['where'] == 'Brooklyn'] else(
+                    45.5 if self.df[self.df['where'] == 'Manhattan'] else 0)))))
+        
+        
+        
+        
         categorical_variables = [i for i in self.df.select_dtypes(include = object)]
-        numerical_variables = [i for i in self.df.select_dtypes(exclude = object)]
-        dummy_variables = pd.get_dummies(self.f[categorical_variables], drop_first = True, dtype = 'int64')
+        numerical_variables = [i for i in self.df.select_dtypes(exclude = object) if i != 'zip_code']
+        dummy_variables = pd.get_dummies(self.df[categorical_variables], drop_first = True, dtype = 'int64')
         scaled_numerical_variables = [i for i in numerical_variables]
         scaled_numerical_variables = [i for i in numerical_variables]
         array = self.df[numerical_variables].values
@@ -59,14 +100,14 @@ class Scrape:
         dfscaled = pd.DataFrame(datascaler.fit_transform(array), columns = scaled_numerical_variables)
         datascaler = pre.MinMaxScaler(feature_range = (0,1))
         self.modeldf = pd.concat([dummy_variables, dfscaled], axis = 1)
+        self.df.to_csv('combined_rests_data.csv')
         return self.modelf.head()
     
 
     def hclustering(self):
         """
           Hierararchical clustering with scipy
-          fitting of scikit learn kmeans clustering model with preprocessed data via pipeline
-
+          fitting of scipy hierarchachal clustering model with preprocessed data
           Args: 
             self(series): original dataframe to be analyzed
           Returns:
