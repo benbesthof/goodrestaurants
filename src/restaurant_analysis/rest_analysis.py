@@ -13,7 +13,9 @@ from sklearn import preprocessing as pre
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import cross_val_score
 import scipy as sp
-from scipy.cluster.hierarchy import dendrogram, ward 
+from scipy.cluster.hierarchy import dendrogram, ward
+import warnings
+
 
 class Scrape:
     """ Create DataFrame to land scraped data into Pandas DataFrame
@@ -76,3 +78,147 @@ class Scrape:
         plt.tick_params(axis = 'x', which = 'both', bottom = 'off', top = 'off', labelbottom = 'off')
         showtime = plt.show()
         return showtime
+
+
+
+class ExploratoryDataAnalysis:
+    """
+    A class for conducting various analyses on a DataFrame.
+    """
+    def __init__(self, data):
+        """
+        Initializes the DataAnalysis object with the provided data.
+        
+        Parameters:
+            data (pd.DataFrame): The data to be analyzed.
+        """
+        self.data = data
+
+    def unique_cuisines(self):
+        """
+        Retrieves the unique values in the 'cuisine' column of the data.
+        
+        Returns:
+        np.ndarray: An array containing unique cuisines.
+        """
+        return self.data['cuisine'].unique()
+
+    def cuisine_value_counts(self):
+        """
+        Counts the occurrences of each unique value in the 'cuisine' column of the data.
+        
+        Returns:
+        pd.Series: A Series containing the counts of unique cuisines.
+        """
+        return self.data['cuisine'].value_counts()
+
+    def unique_boroughs(self):
+        """
+        Retrieves the unique values in the 'borough' column of the data.
+        
+        Returns:
+        np.ndarray: An array containing unique boroughs.
+        """
+        return self.data['borough'].unique()
+
+    def borough_value_counts(self):
+        """
+        Counts the occurrences of each unique value in the 'borough' column of the data.
+        
+        Returns:
+        pd.Series: A Series containing the counts of unique boroughs.
+        """
+        return self.data['borough'].value_counts()
+
+
+
+    def average_rating_by_category(self, category):
+        """
+        Computes the average rating for each category (cuisine or borough).
+        
+        Parameters:
+            category (str): The category to group by ('cuisine' or 'borough').
+            
+        Returns:
+        pd.Series: A Series containing average ratings for each category.
+        """
+        return self.data.groupby(category)['rating'].mean()
+
+    def average_price_by_category(self, category):
+        """
+        Computes the average price level for each category (cuisine or borough).
+        
+        Parameters:
+            category (str): The category to group by ('cuisine' or 'borough').
+            
+        Returns:
+        pd.Series: A Series containing average price levels for each category.
+        """
+        # Converting price to numerical value if it's not already
+        if isinstance(self.data['price'].iloc[0], str):
+            self.data['price_level'] = self.data['price'].apply(lambda x: len(x))
+        else:
+            self.data['price_level'] = self.data['price']
+
+        return self.data.groupby(category)['price_level'].mean()
+
+    def plot_rating_distribution(self):
+        """
+        Creates a histogram for the distribution of ratings.
+        """
+        self.data['rating'].plot.hist(title='Histogram of Ratings', bins=10, ec='black')
+        plt.xlabel('Rating')
+        plt.ylabel('Frequency')
+        plt.show()
+        
+    def plot_price_distribution(self):
+        """
+        Creates a histogram for the distribution of price levels.
+        """
+        # Mapping string values of 'price' to numerical values
+        price_mapping = {'$': 1, '$$': 2, '$$$': 3, '$$$$': 4, 'Not Available': 0}
+        self.data['price_level'] = self.data['price'].map(price_mapping)
+
+        # Count the occurrences of each price level
+        price_counts = self.data['price_level'].value_counts().sort_index()
+
+        # Plotting
+        price_counts.plot.bar(title='Bar Plot of Price Levels')
+        plt.xlabel('Price Level')
+        plt.ylabel('Frequency')
+
+        # Adjusting x-axis labels to match the price levels
+        xticks_labels = ['N/A', '$', '$$', '$$$', '$$$$']  # Labels for 0, 1, 2, 3, 4
+        plt.xticks(ticks=range(len(xticks_labels)), labels=xticks_labels)
+
+        plt.show()
+
+
+        
+
+
+
+    def plot_cuisine_count(self):
+        """
+        Creates a count plot for cuisines.
+        """
+        sns.countplot(y='cuisine', data=self.data, order=self.data['cuisine'].value_counts().index)
+        plt.title('Count Plot of Cuisines')
+        plt.show()
+
+    def plot_borough_count(self):
+        """
+        Creates a count plot for boroughs.
+        """
+        sns.countplot(y='borough', data=self.data, order=self.data['borough'].value_counts().index)
+        plt.title('Count Plot of Boroughs')
+        plt.show()
+
+    def correlation_analysis(self):
+        """
+        Performs correlation analysis on numerical columns of the dataset.
+        """
+        correlation_matrix = self.data.corr()
+        sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
+        plt.title('Correlation Matrix')
+        plt.show()
