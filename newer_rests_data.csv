@@ -1,0 +1,651 @@
+,name,rating,price,zip_code,categories,cuisine,borough
+0,Piccoli Trattoria,4.5,2,11215,"Italian, Pasta Shops, Wine Bars",Italian,Brooklyn
+1,Osteria Brooklyn,4.5,3,11205,Italian,Italian,Brooklyn
+2,Cent'Anni,4.0,2,11238,Italian,Italian,Brooklyn
+3,Ammazzacaffè,4.5,2,11211,"Cocktail Bars, Italian, Wine Bars",Italian,Brooklyn
+4,Evelina,4.5,2,11205,Italian,Italian,Brooklyn
+5,Camillo,4.0,2,11225,Italian,Italian,Brooklyn
+6,Mariella,4.5,2,11215,"Italian, Gluten-Free, Salad",Italian,Brooklyn
+7,Positano Restaurant,4.5,3,11209,"Italian, Gluten-Free, Seafood",Italian,Brooklyn
+8,Barboncino Pizza & Bar,4.5,2,11238,"Pizza, Bars, Italian",Italian,Brooklyn
+9,Da Andrea - Greenwich Village,4.5,2,10011,"Italian, Mediterranean, Breakfast & Brunch",Italian,Manhattan
+10,Michael's of Brooklyn,4.5,3,11229,Italian,Italian,Brooklyn
+11,Montesacro Pinseria Brooklyn,4.5,2,11211,"Italian, Pizza, Bars",Italian,Brooklyn
+12,Brooklyn Roots Italian,4.5,3,11209,Italian,Italian,Brooklyn
+13,Il Posto,4.0,3,11234,Italian,Italian,Brooklyn
+14,Gino's Brick Oven Pizza & Trattoria,4.0,2,11225,"Italian, Pizza, Wine Bars",Italian,Brooklyn
+15,Forma Pasta Factory,4.5,2,11238,"Italian, Pasta Shops, Salad",Italian,Brooklyn
+16,Gersi,4.5,2,11231,"Italian, Wine Bars, Breakfast & Brunch",Italian,Brooklyn
+17,Bamonte's,4.0,2,11211,Italian,Italian,Brooklyn
+18,Lillo Cucina Italiana,5.0,2,11201,"Cafes, Italian",Italian,Brooklyn
+19,Terre,4.5,3,11215,"Italian, Wine Bars, Breakfast & Brunch",Italian,Brooklyn
+20,Aita Trattoria,4.0,2,11238,"Italian, Wine Bars, Cocktail Bars",Italian,Brooklyn
+21,Scottadito Osteria Toscana,4.0,3,11215,"Italian, Venues & Event Spaces",Italian,Brooklyn
+22,Da Nonna Rosa,4.0,2,11215,"Italian, Pizza, Venues & Event Spaces",Italian,Brooklyn
+23,Fragole Ristorante,4.5,2,11231,"Italian, Wine Bars, Cocktail Bars",Italian,Brooklyn
+24,Gino's Restaurant,4.0,2,11209,"Pizza, Italian, Wine Bars",Italian,Brooklyn
+25,Santa Panza,4.5,2,11221,"Pizza, Italian, Breakfast & Brunch",Italian,Brooklyn
+26,Pomp and Circumstance,5.0,3,11211,"Italian, Mediterranean, Middle Eastern",Italian,Brooklyn
+27,Otis,5.0,3,11206,"New American, Cocktail Bars",Italian,Brooklyn
+28,Aita,4.0,3,11238,"Italian, Wine Bars, Burgers",Italian,Brooklyn
+29,Vetro Restaurant & Lounge,4.5,3,11414,"Italian, Lounges, Venues & Event Spaces",Italian,Queens
+30,Fontanas's,4.0,2,11234,"Italian, Seafood, Wraps",Italian,Brooklyn
+31,Mama Rao Cucina Italiana,4.5,3,11219,"Italian, Party & Event Planning",Italian,Brooklyn
+32,L'Artusi,4.5,3,10014,"Italian, Cocktail Bars",Italian,Manhattan
+33,Saraghina Pizzeria,4.0,2,11233,"Pizza, Italian, Bars",Italian,Brooklyn
+34,Locanda Vini e Olii,4.0,3,11238,"Italian, Wine Bars",Italian,Brooklyn
+35,Aurora,4.0,2,11249,"Italian, Comfort Food",Italian,Brooklyn
+36,Roberta's,4.0,2,11206,"Pizza, Italian",Italian,Brooklyn
+37,Lilia,4.0,0,11211,"Italian, Cocktail Bars",Italian,Brooklyn
+38,Olio e Più,4.5,2,10014,"Pizza, Italian, Cocktail Bars",Italian,Manhattan
+39,Naked Dog,4.5,2,11222,"Italian, Wine Bars, Cocktail Bars",Italian,Brooklyn
+40,Testo,4.5,2,11206,"Italian, Gluten-Free, Breakfast & Brunch",Italian,Brooklyn
+41,Graziella's,4.0,2,11205,"Italian, Pizza, Bars",Italian,Brooklyn
+42,La Nonna Ristorante & Bar,4.0,2,11249,"Italian, Bars",Italian,Brooklyn
+43,South Brooklyn Foundry,4.5,2,11209,"New American, Breakfast & Brunch, Burgers",American,Brooklyn
+44,Sweet Brooklyn Bar And Grill,4.0,2,11216,"Gastropubs, American, Breakfast & Brunch",American,Brooklyn
+45,Otis,5.0,3,11206,"New American, Cocktail Bars",American,Brooklyn
+46,Midwood Flats,4.0,2,11225,"Cocktail Bars, Pubs, Bartenders",American,Brooklyn
+47,The Brooklyn Tree,4.5,2,11206,"Comfort Food, New American, Breakfast & Brunch",American,Brooklyn
+48,The Wheelhouse,4.0,2,11237,"New American, Sandwiches, Bars",American,Brooklyn
+49,Walter's,4.0,2,11217,"New American, Cocktail Bars",American,Brooklyn
+50,Hart's Restaurant,4.5,3,11238,New American,American,Brooklyn
+51,Mama Fox,4.0,2,11233,"New American, Cocktail Bars",American,Brooklyn
+52,The Cabin NYC,4.0,2,10009,"New American, Cocktail Bars, Breakfast & Brunch",American,Manhattan
+53,Endswell Bar & Bistro,4.5,2,11217,"Cocktail Bars, French",American,Brooklyn
+54,Concrete,4.5,2,11206,"Bars, Breakfast & Brunch, Sicilian",American,Brooklyn
+55,Charm Bar & Restaurant,4.0,3,11217,"Caribbean, New American, Cocktail Bars",American,Brooklyn
+56,Buttermilk Channel,4.0,2,11231,Breakfast & Brunch,American,Brooklyn
+57,The Four Horsemen,4.5,2,11211,"Wine Bars, New American",American,Brooklyn
+58,Milk & Honey Cafe,4.0,2,11230,"Coffee & Tea, Desserts, Breakfast & Brunch",American,Brooklyn
+59,Sunday in Brooklyn,4.0,2,11249,"New American, Breakfast & Brunch, Cocktail Bars",American,Brooklyn
+60,Emily,4.0,2,11238,American,American,Brooklyn
+61,Mayfield,4.0,2,11238,"New American, Breakfast & Brunch",American,Brooklyn
+62,Sweet Chick,4.0,2,11217,"Breakfast & Brunch, Southern, Chicken Shop",American,Brooklyn
+63,Sunken Harbor Club,4.5,3,11201,"Cocktail Bars, Tiki Bars",American,Brooklyn
+64,Peaches HotHouse,4.0,2,11216,"Southern, American, Bars",American,Brooklyn
+65,Mom's Kitchen & Bar,4.5,2,10019,"Comfort Food, Breakfast & Brunch, Bars",American,Manhattan
+66,J&A Burgers N Shakes,3.5,1,11237,"Burgers, Wraps",American,Brooklyn
+67,Lincoln Station,4.0,2,11238,"American, Cafes",American,Brooklyn
+68,Peaches,3.5,2,11233,"Southern, Seafood, Breakfast & Brunch",American,Brooklyn
+69,OTB,4.5,2,11211,"New American, Cocktail Bars, Gastropubs",American,Brooklyn
+70,St. Anselm,4.0,3,11211,"New American, Wine Bars, Steakhouses",American,Brooklyn
+71,Baron's,4.0,2,11205,"New American, Bars, Seafood",American,Brooklyn
+72,Sweetwater Restaurant,4.0,2,11249,"New American, Bars",American,Brooklyn
+73,Honey Badger,4.0,3,11225,"New American, Seafood",American,Brooklyn
+74,Trad Room,4.5,2,11233,"Japanese, Sushi Bars, Cocktail Bars",Japanese,Brooklyn
+75,Izakaya Nana,4.5,3,11354,Izakaya,Japanese,Queens
+76,Oita NYC,4.5,2,11215,"Sushi Bars, Japanese, Asian Fusion",Japanese,Brooklyn
+77,U-gu,4.5,2,11205,"Sushi Bars, Japanese",Japanese,Brooklyn
+78,Okonomi,4.5,3,11211,"Japanese, Seafood",Japanese,Brooklyn
+79,Fukurou Brooklyn,4.5,2,11237,Ramen,Japanese,Brooklyn
+80,Izakaya Fuku,4.5,2,11372,Japanese,Japanese,Queens
+81,Raku,4.5,2,10003,"Japanese, Noodles",Japanese,Manhattan
+82,Karasu,4.0,3,11217,"Japanese, Cocktail Bars",Japanese,Brooklyn
+83,Ako,4.0,2,11211,"Sushi Bars, Japanese, Wine Bars",Japanese,Brooklyn
+84,Sushi Yashin,4.0,2,11215,"Japanese, Sushi Bars",Japanese,Brooklyn
+85,Izakaya Ajimi,4.5,2,11214,"Izakaya, Ramen",Japanese,Brooklyn
+86,750 Myrtle Diner,4.5,2,11205,"Tapas Bars, Izakaya",Japanese,Brooklyn
+87,Uotora,4.5,0,11216,"Japanese, Sushi Bars",Japanese,Brooklyn
+88,Chuko,4.0,2,11238,"Asian Fusion, Ramen",Japanese,Brooklyn
+89,Wasan Brooklyn,4.0,2,11217,Japanese,Japanese,Brooklyn
+90,Geido,4.5,2,11217,"Japanese, Sushi Bars",Japanese,Brooklyn
+91,Ki Sushi,4.5,2,11217,"Japanese, Sushi Bars",Japanese,Brooklyn
+92,Gen,4.0,2,11238,"Japanese, Sushi Bars",Japanese,Brooklyn
+93,ACRE,4.5,2,11222,"Breakfast & Brunch, Japanese, Coffee & Tea",Japanese,Brooklyn
+94,Raku,4.5,2,10012,"Japanese, Noodles",Japanese,Manhattan
+95,Nami Nori,4.5,3,11211,"Sushi Bars, Japanese, Gluten-Free",Japanese,Brooklyn
+96,Ume Williamsburg,4.0,0,11249,Sushi Bars,Japanese,Brooklyn
+97,Bushniwa,4.0,2,11206,"Japanese, Sushi Bars, Asian Fusion",Japanese,Brooklyn
+98,1 OR 8,4.0,3,11205,"Japanese, Sushi Bars",Japanese,Brooklyn
+99,Bozu,4.0,2,11211,"Japanese, Bars",Japanese,Brooklyn
+100,Karazishi Botan,4.5,2,11231,Ramen,Japanese,Brooklyn
+101,Ten Japanese Cuisine,4.0,2,11215,"Japanese, Sushi Bars",Japanese,Brooklyn
+102,Yopparai,4.5,3,10002,Izakaya,Japanese,Manhattan
+103,Benemon,4.5,2,10003,"Japanese, Tapas/Small Plates, Cocktail Bars",Japanese,Manhattan
+104,Samurai Papa BS,4.0,2,11216,Ramen,Japanese,Brooklyn
+105,Chavela's,4.0,2,11238,"Mexican, Bars",Mexican,Brooklyn
+106,Chela Park Slope,4.5,2,11215,"Mexican, Cocktail Bars, Breakfast & Brunch",Mexican,Brooklyn
+107,Cruz Del Sur,4.5,2,11238,"Tacos, Cocktail Bars",Mexican,Brooklyn
+108,Taqueria Milear,4.0,1,11216,Mexican,Mexican,Brooklyn
+109,Casa Azul,4.5,2,11215,"Mexican, Cocktail Bars",Mexican,Brooklyn
+110,Calabrije's Margaritas & Tacos,4.0,2,11237,"Tacos, Cocktail Bars",Mexican,Brooklyn
+111,Las Santas,4.0,2,11217,"Mexican, Cocktail Bars, Breakfast & Brunch",Mexican,Brooklyn
+112,Taqueria El Patron Mexican Grill,3.5,3,11225,Mexican,Mexican,Brooklyn
+113,Panchitas Place,4.5,2,11215,"Bars, Breakfast & Brunch, Mexican",Mexican,Brooklyn
+114,Fonda Park Slope,4.0,3,11215,"Mexican, Salad, Breakfast & Brunch",Mexican,Brooklyn
+115,Gordo's Cantina,4.0,2,11237,Mexican,Mexican,Brooklyn
+116,Don Pancho Villa Restaurant,3.5,2,11211,"Tex-Mex, Mexican",Mexican,Brooklyn
+117,Amaranto Mexican Restaurant,4.5,2,11237,Mexican,Mexican,Brooklyn
+118,Tacombi,4.0,2,11217,Mexican,Mexican,Brooklyn
+119,Mesa Coyoacan,4.0,2,11211,"Mexican, Bars",Mexican,Brooklyn
+120,Nacho Macho Taco,4.5,1,11217,Mexican,Mexican,Brooklyn
+121,Los Tres Chiflados,4.0,2,11226,Mexican,Mexican,Brooklyn
+122,Tiny's Cantina,4.5,2,11217,"Mexican, Cocktail Bars",Mexican,Brooklyn
+123,Tacombi,4.5,2,11211,Mexican,Mexican,Brooklyn
+124,Miti Miti,4.0,2,11217,"Latin American, Mexican, Breakfast & Brunch",Mexican,Brooklyn
+125,La Contenta,4.5,2,10002,"Mexican, Bars, Breakfast & Brunch",Mexican,Manhattan
+126,Mesa Azteca,4.0,2,11237,Mexican,Mexican,Brooklyn
+127,El Jeffe,4.5,2,11216,New Mexican Cuisine,Mexican,Brooklyn
+128,Xixa,4.5,3,11211,"Mexican, Tapas/Small Plates, Cocktail Bars",Mexican,Brooklyn
+129,Purepecha,4.5,2,11201,Mexican,Mexican,Brooklyn
+130,Jajaja Mexicana,4.5,2,11249,"Mexican, Vegan, Cocktail Bars",Mexican,Brooklyn
+131,Leyenda,4.0,2,11201,"Latin American, Mexican, Cocktail Bars",Mexican,Brooklyn
+132,Bar Verde,4.5,2,10003,"Mexican, Vegan, Gluten-Free",Mexican,Manhattan
+133,Oxomoco,4.0,3,11222,Mexican,Mexican,Brooklyn
+134,Rosa Mexicano,3.5,2,10003,Mexican,Mexican,Manhattan
+135,Nacho Macho Taco,4.0,2,11238,Mexican,Mexican,Brooklyn
+136,Las Chelitas,4.5,2,11228,Mexican,Mexican,Brooklyn
+137,Rosa Mexicano,3.5,2,10023,Mexican,Mexican,Manhattan
+138,Jajaja Mexicana,4.5,2,10014,"Mexican, Vegan, Cocktail Bars",Mexican,Manhattan
+139,Ho' Brah a Taco Joint,4.0,2,11209,"Mexican, Cocktail Bars, Hawaiian",Mexican,Brooklyn
+140,Ital Kitchen,4.5,2,11225,"Vegetarian, Vegan",Kosher,Brooklyn
+141,Traif,4.5,0,11211,"New American, Tapas/Small Plates",Kosher,Brooklyn
+142,Izzy's Brooklyn Smokehouse,4.0,3,11213,"Barbeque, Kosher, Smokehouse",Kosher,Brooklyn
+143,Bunna Cafe,4.5,2,11237,"Ethiopian, Vegan, African",Kosher,Brooklyn
+144,T Fusion Steakhouse,4.0,3,11234,"Steakhouses, Kosher, Venues & Event Spaces",Kosher,Brooklyn
+145,Miriam,4.0,2,11217,"Wine Bars, Mediterranean, Breakfast & Brunch",Kosher,Brooklyn
+146,Bison & Bourbon,3.0,0,11215,"Kosher, Burgers, American",Kosher,Brooklyn
+147,Reunion,4.5,2,11211,"Breakfast & Brunch, Middle Eastern, Cocktail Bars",Kosher,Brooklyn
+148,ALENbi,3.5,0,11225,"Middle Eastern, Kosher",Kosher,Brooklyn
+149,Yemen Cafe & Restaurant,4.5,2,11201,"Middle Eastern, Cafes, Soup",Kosher,Brooklyn
+150,The Loft Steakhouse,4.5,3,11218,"Steakhouses, Kosher",Kosher,Brooklyn
+151,David's Restaurant,4.5,2,11223,"Kosher, Middle Eastern",Kosher,Brooklyn
+152,Milk & Honey Cafe,4.0,2,11230,"Coffee & Tea, Desserts, Breakfast & Brunch",Kosher,Brooklyn
+153,David's Brisket House and Deli,4.0,2,11216,"Delis, Sandwiches, Burgers",Kosher,Brooklyn
+154,12 Chairs Cafe,4.0,2,11249,"Middle Eastern, Breakfast & Brunch, Mediterranean",Kosher,Brooklyn
+155,Bordeaux,4.5,3,11230,"Kosher, Steakhouses, New American",Kosher,Brooklyn
+156,Patrizia's - Williamsburg,4.0,2,11249,"Pizza, Italian",Kosher,Brooklyn
+157,Laser Wolf,4.5,3,11249,"Middle Eastern, Desserts, Cocktail Bars",Kosher,Brooklyn
+158,19 Cleveland,4.0,2,10012,Mediterranean,Kosher,Manhattan
+159,Orchidea,4.0,3,11219,"Kosher, New American",Kosher,Brooklyn
+160,Luanne's Wild Ginger,4.5,2,11205,"Vegan, Kosher",Kosher,Brooklyn
+161,Shalom Japan,4.0,3,11211,Japanese,Kosher,Brooklyn
+162,Karczma,4.5,2,11222,Polish,Kosher,Brooklyn
+163,Ravagh Persian Grill,4.0,2,10016,"Middle Eastern, Persian/Iranian, Mediterranean",Kosher,Manhattan
+164,Boeuf & Bun,3.5,2,11213,Burgers,Kosher,Brooklyn
+165,Holy Schnitzel,4.0,2,11223,"Kosher, Salad, Sandwiches",Kosher,Brooklyn
+166,Mint,3.5,2,11223,"New American, Seafood, Kosher",Kosher,Brooklyn
+167,Marani,4.5,2,11374,"Mediterranean, Kosher, Georgian",Kosher,Queens
+168,Taste of Samarkand,4.5,2,11374,"Uzbek, Kosher",Kosher,Queens
+169,Mike's Bistro,4.5,0,10022,"New American, Kosher, Bars",Kosher,Manhattan
+170,Miznon,4.0,2,10011,"Mediterranean, Middle Eastern, Sandwiches",Kosher,Manhattan
+171,Grill On Lee,3.5,2,11205,"Kosher, Chinese, Delis",Kosher,Brooklyn
+172,Paulie Gee's,4.5,2,11222,Pizza,Kosher,Brooklyn
+173,Bubby's Tribeca,4.0,2,10013,"American, Breakfast & Brunch, Sandwiches",Kosher,Manhattan
+174,The River Café,4.0,0,11201,"New American, Wine Bars, Venues & Event Spaces",Kosher,Brooklyn
+175,Trattoria L'incontro,4.5,3,11105,"Italian, Pizza, Salad",Italian,Queens
+176,Tuscan Hills,4.0,2,11375,"Italian, Pizza, Wine Bars",Italian,Queens
+177,Vite Vinosteria,4.5,2,11106,"Italian, Wine Bars",Italian,Queens
+178,Park Side Restaurant,4.0,3,11368,Italian,Italian,Queens
+179,Don Peppe,4.0,3,11420,"Italian, Desserts, Seafood",Italian,Queens
+180,Bruno's Ristorante,4.5,2,11414,Italian,Italian,Queens
+181,Trattoria 35,4.0,2,11361,"Pizza, Italian",Italian,Queens
+182,Palermo Restaurant & Bar,4.5,2,11105,"Italian, Bars",Italian,Queens
+183,Fuzi Pasta Co,4.5,2,11365,"Pasta Shops, Italian",Italian,Queens
+184,Barosa,3.5,2,11374,"Italian, Seafood, Pizza",Italian,Queens
+185,Il Poeta,4.0,2,11375,"Italian, Wine Bars",Italian,Queens
+186,Portofino Ristorante,3.0,3,11375,"Italian, Salad, Soup",Italian,Queens
+187,Vetro Restaurant & Lounge,4.5,3,11414,"Italian, Lounges, Venues & Event Spaces",Italian,Queens
+188,Piatto,4.0,2,11101,"Pizza, Italian, Wine Bars",Italian,Queens
+189,Da Andrea - Greenwich Village,4.5,2,10011,"Italian, Mediterranean, Breakfast & Brunch",Italian,Manhattan
+190,Armondo's Italian Restaurant,4.5,3,11372,Italian,Italian,Queens
+191,Joe's Restaurant,4.0,2,11385,Italian,Italian,Queens
+192,La Vigna Restaurant,3.5,2,11375,Italian,Italian,Queens
+193,Dee's Wood Fired Pizza & Kitchen,4.0,2,11375,"Pizza, Italian, American",Italian,Queens
+194,Villaggio Ristorante Italian Bistro,4.0,2,11357,"Italian, Seafood, Salad",Italian,Queens
+195,Olio e Più,4.5,2,10014,"Pizza, Italian, Cocktail Bars",Italian,Manhattan
+196,Il Bacco Ristorante,3.5,3,11362,"Italian, Pizza, Wine Bars",Italian,Queens
+197,Il Falco,4.5,3,11101,"Italian, Venues & Event Spaces, Wine Bars",Italian,Queens
+198,Villa Erasmo,4.0,2,11379,Italian,Italian,Queens
+199,Ammazzacaffè,4.5,2,11211,"Cocktail Bars, Italian, Wine Bars",Italian,Brooklyn
+200,Macoletta Brick Oven Pizzeria,4.5,2,11102,"Pizza, Italian",Italian,Queens
+201,Riviera Ristorante,4.5,2,11357,Italian,Italian,Queens
+202,SoleLuna Restaurant,4.5,2,11104,"Cafes, Italian, Breakfast & Brunch",Italian,Queens
+203,Via Trenta Osteria,4.0,2,11103,"Italian, Wine Bars",Italian,Queens
+204,Acquista Trattoria,4.0,2,11366,"Pizza, Italian",Italian,Queens
+205,Vesta,4.5,2,11102,"Italian, Wine Bars",Italian,Queens
+206,Papazzio Restaurant,4.0,2,11361,"Italian, Jazz & Blues, Wine Bars",Italian,Queens
+207,Piccola Cucina Uptown,4.5,3,10022,Sicilian,Italian,Manhattan
+208,Antonio's Trattoria,4.5,2,10458,"Italian, Pizza, Desserts",Italian,The Bronx
+209,Patrizia's Of Maspeth,4.0,2,11378,"Italian, Pizza, Salad",Italian,Queens
+210,Uncle Peter's,4.0,2,11372,"Italian, Spanish, New American",Italian,Queens
+211,IL Toscano Ristorante,4.0,3,11363,"Italian, Seafood",Italian,Queens
+212,Forno Siciliano,4.0,2,11105,Italian,Italian,Queens
+213,Bamonte's,4.0,2,11211,Italian,Italian,Brooklyn
+214,Montesacro Pinseria Brooklyn,4.5,2,11211,"Italian, Pizza, Bars",Italian,Brooklyn
+215,Tavern 157,4.5,2,11354,"Lounges, Steakhouses, New American",American,Queens
+216,Luna's Kitchen & Bar,4.5,2,11372,"New American, Cocktail Bars, Breakfast & Brunch",American,Queens
+217,The Shady Lady,4.0,2,11103,"Breakfast & Brunch, Bars, Comfort Food",American,Queens
+218,Trestle,4.5,2,11106,"Cocktail Bars, New American, Breakfast & Brunch",American,Queens
+219,The Pomeroy,4.5,2,11105,"New American, Bars",American,Queens
+220,Forest Hills Station House,4.0,2,11375,"Gastropubs, Cocktail Bars, Beer Bar",American,Queens
+221,The Lazy Cow,4.0,2,11361,"Gastropubs, New American, Cocktail Bars",American,Queens
+222,Dinerbar,4.0,2,11374,"Diners, Wine Bars, American",American,Queens
+223,Mom's Kitchen & Bar,4.0,2,11102,"Bars, American, Breakfast & Brunch",American,Queens
+224,The Alcove,4.5,2,11104,"Gastropubs, Tapas Bars, Breakfast & Brunch",American,Queens
+225,Oliver's Astoria,4.0,2,11103,"New American, Breakfast & Brunch, Cocktail Bars",American,Queens
+226,The Beast Next Door,4.5,2,11101,"New American, Tapas/Small Plates, Wine Bars",American,Queens
+227,The Queensboro,4.0,2,11372,"Gastropubs, New American, Breakfast & Brunch",American,Queens
+228,Carla,4.5,2,11101,"New American, Burgers, Cocktail Bars",American,Queens
+229,Prime Mēt Steakhouse,4.0,3,11354,"Steakhouses, Seafood, New American",American,Queens
+230,The Bonnie,4.0,2,11105,"Gastropubs, New American, Breakfast & Brunch",American,Queens
+231,Mom's Kitchen & Bar,4.5,2,10019,"Comfort Food, Breakfast & Brunch, Bars",American,Manhattan
+232,The Highwater,4.0,2,11106,"New American, Tiki Bars, Breakfast & Brunch",American,Queens
+233,Arcadia Bar & Kitchen,4.5,2,11102,"Cocktail Bars, New American, Tacos",American,Queens
+234,Jackson's Eatery | Bar,4.5,2,11101,"Bars, Breakfast & Brunch, New American",American,Queens
+235,The Cabin NYC,4.0,2,10009,"New American, Cocktail Bars, Breakfast & Brunch",American,Manhattan
+236,The Brewery Bar & Kitchen,4.5,2,11377,"Sports Bars, American, Irish Pub",American,Queens
+237,Veranda Restaurant & Cafe,4.0,2,11361,"Mediterranean, American, Greek",American,Queens
+238,Rove,4.0,2,11375,"American, Gastropubs, Beer Bar",American,Queens
+239,Fogo de Chão Brazilian Steakhouse,4.0,0,11373,"Brazilian, Seafood, Steakhouses",American,Queens
+240,The Sweet Sap,4.0,2,11358,"New American, Korean, Cocktail Bars",American,Queens
+241,White Radish,4.0,2,11375,"New American, Diners, Wine Bars",American,Queens
+242,Otis,5.0,3,11206,"New American, Cocktail Bars",American,Brooklyn
+243,THE HUNTRESS whiskey n' wings,4.0,2,11101,"Chicken Wings, Burgers, Cocktail Bars",American,Queens
+244,Queens Bully,3.5,2,11375,"Gastropubs, Cocktail Bars, Breakfast & Brunch",American,Queens
+245,Vegoist,4.0,2,11101,"New American, Bars, Vegan",American,Queens
+246,Dirty Pierre's,4.0,2,11375,"Bars, Breakfast & Brunch, Sandwiches",American,Queens
+247,Sanger Hall,4.0,2,11104,"Burgers, Cocktail Bars, Beer, Wine & Spirits",American,Queens
+248,Fillmore's Tavern,4.0,2,11365,"Pubs, Burgers, Desserts",American,Queens
+249,The Lowery Bar & Kitchen,4.5,2,11104,"New American, Cocktail Bars, Sports Bars",American,Queens
+250,Halsey's,4.5,2,11102,"New American, Cocktail Bars",American,Queens
+251,Uncle Peter's,4.0,2,11372,"Italian, Spanish, New American",American,Queens
+252,Sanfords Astoria,4.0,2,11106,"Breakfast & Brunch, New American, Whiskey Bars",American,Queens
+253,The Local Press,4.5,2,11417,"Salad, Burgers, Sandwiches",American,Queens
+254,Sweet Spot,3.5,2,11105,"Sports Bars, Steakhouses, Cocktail Bars",American,Queens
+255,The Weekender,4.5,1,11377,"Pool Halls, Himalayan/Nepalese, Bars",American,Queens
+256,Da Andrea - Greenwich Village,4.5,2,10011,"Italian, Mediterranean, Breakfast & Brunch",American,Manhattan
+257,Leaf Bar & Lounge,4.0,2,11354,"Lounges, Cocktail Bars, Venues & Event Spaces",American,Queens
+258,Izakaya Nana,4.5,3,11354,Izakaya,Japanese,Queens
+259,Izakaya Fuku,4.5,2,11372,Japanese,Japanese,Queens
+260,Mito,4.0,2,11375,"Japanese, Sushi Bars, Asian Fusion",Japanese,Queens
+261,Umi Sushi,4.5,2,11366,"Japanese, Sushi Bars",Japanese,Queens
+262,Sake Kawa,4.5,3,11106,"Sushi Bars, Ramen",Japanese,Queens
+263,Katsuno,4.0,3,11375,"Japanese, Sushi Bars",Japanese,Queens
+264,Iki Modern Japanese Cuisine,4.0,3,11354,"Japanese, Sushi Bars",Japanese,Queens
+265,That Place,5.0,0,11106,"Japanese, Sushi Bars",Japanese,Queens
+266,Bamboo Ya,4.0,2,11375,"Sushi Bars, Japanese, Wine Bars",Japanese,Queens
+267,Shogun Hibachi,4.0,2,11375,"Japanese, Sushi Bars",Japanese,Queens
+268,Sushi On Me,5.0,0,11372,"Japanese, Sushi Bars, Speakeasies",Japanese,Queens
+269,Kyuramen - Bayside,4.5,2,11361,"Ramen, Noodles",Japanese,Queens
+270,Gyu-Kaku Japanese BBQ,4.5,2,11354,"Barbeque, Japanese, Asian Fusion",Japanese,Queens
+271,Matsuri,4.5,2,11377,Japanese,Japanese,Queens
+272,Hashi Ramen and Izakaya,4.0,2,11358,"Ramen, Sushi Bars",Japanese,Queens
+273,Ooi Sushi and Bar,4.5,2,11101,"Sushi Bars, Bars, Japanese",Japanese,Queens
+274,mochiron Izakaya,4.0,2,11103,"Izakaya, Ramen",Japanese,Queens
+275,Torigo Japanese Restaurant,4.5,2,11001,"Japanese, Sushi Bars",Japanese,Queens
+276,Koyo,4.5,0,11103,"Sushi Bars, Japanese",Japanese,Queens
+277,Akino,4.0,3,11373,"Sushi Bars, Japanese",Japanese,Queens
+278,Sushi Time,4.5,2,11375,"Sushi Bars, Japanese",Japanese,Queens
+279,Tamashii Gold,4.0,2,11361,Ramen,Japanese,Queens
+280,Tara Japanese Cuisine,4.0,3,11362,"Sushi Bars, Japanese, Seafood",Japanese,Queens
+281,Suzuki Shokudo,4.5,2,11101,"Sushi Bars, Ramen",Japanese,Queens
+282,Ariyoshi,3.5,2,11104,Japanese,Japanese,Queens
+283,Nippon Cha,4.0,2,11361,Ramen,Japanese,Queens
+284,Mito,3.5,2,11360,"Japanese, Sushi Bars, Bars",Japanese,Queens
+285,Yoi Sushi Japanese,4.0,2,11354,"Sushi Bars, Ramen",Japanese,Queens
+286,GAN-HOO BBQ,4.5,3,11354,"Barbeque, Chinese, Japanese",Japanese,Queens
+287,Sakagura,4.0,0,10017,Japanese,Japanese,Manhattan
+288,Beat Mazesoba,4.5,2,11358,"Ramen, Noodles, Beer Bar",Japanese,Queens
+289,Izakaya MEW,4.5,2,10001,"Tapas Bars, Sushi Bars, Izakaya",Japanese,Manhattan
+290,Sama Street,5.0,3,11222,"Cocktail Bars, Pan Asian, Tapas/Small Plates",Japanese,Brooklyn
+291,Tamashii Red,4.0,2,11375,Ramen,Japanese,Queens
+292,Hibino,4.0,2,11101,"Japanese, Sushi Bars",Japanese,Queens
+293,Ruta Oaxaca Mexican Cuisine,4.5,3,11106,"Mexican, Breakfast & Brunch, Cocktail Bars",Mexican,Queens
+294,Las Catrinas Mexican Bar & Eatery,4.0,2,11106,"Cocktail Bars, Tacos",Mexican,Queens
+295,Don Tequila Urban Cantina,3.5,2,11385,"Mexican, Cocktail Bars",Mexican,Queens
+296,El Mero Mero,4.5,2,11101,Mexican,Mexican,Queens
+297,Mas Tortilla,4.5,2,11375,Mexican,Mexican,Queens
+298,The Alcove,4.5,2,11104,"Gastropubs, Tapas Bars, Breakfast & Brunch",Mexican,Queens
+299,Chela & Garnacha,4.5,2,11106,"Mexican, Wine Bars, Breakfast & Brunch",Mexican,Queens
+300,Fresco's Cantina,4.5,2,11106,Mexican,Mexican,Queens
+301,El Coyote - Forest Hills,3.0,2,11375,"Mexican, Cocktail Bars",Mexican,Queens
+302,Taqueria Coatzingo,4.0,2,11372,Mexican,Mexican,Queens
+303,La Tiendita Taqueria,4.0,2,11103,Tacos,Mexican,Queens
+304,Casa Enrique,4.0,2,11101,Mexican,Mexican,Queens
+305,Tacuba,4.0,2,11106,"Mexican, Latin American, Cocktail Bars",Mexican,Queens
+306,5 Burro Cafe,3.5,2,11375,"Mexican, Cocktail Bars",Mexican,Queens
+307,Tacombi,4.0,2,11375,Tacos,Mexican,Queens
+308,Carla,4.5,2,11101,"New American, Burgers, Cocktail Bars",Mexican,Queens
+309,Chihuahua,4.5,2,11104,Mexican,Mexican,Queens
+310,Vida Verde,4.5,2,10019,"Cocktail Bars, Mexican, Venues & Event Spaces",Mexican,Manhattan
+311,El Patron,3.5,2,11358,Mexican,Mexican,Queens
+312,La Contenta,4.5,2,10002,"Mexican, Bars, Breakfast & Brunch",Mexican,Manhattan
+313,Casa Margaritas,4.5,2,11426,"Mexican, Colombian, Spanish",Mexican,Queens
+314,Jajaja Mexicana,4.5,2,10014,"Mexican, Vegan, Cocktail Bars",Mexican,Manhattan
+315,Toloache 50,4.0,3,10012,Mexican,Mexican,Manhattan
+316,Molcajete Mexican Restaurant,4.0,2,11372,"Mexican, Bars, Spanish",Mexican,Queens
+317,Kandela NYC,3.5,2,11417,"Mexican, Sports Bars, New American",Mexican,Queens
+318,Tequila Sunrise,3.0,2,11361,"Mexican, Bars, Latin American",Mexican,Queens
+319,Moho Mexican Grill,4.0,2,11361,"Mexican, Halal",Mexican,Queens
+320,Taqueria Santa Fe,4.5,1,11377,Mexican,Mexican,Queens
+321,Hot Peppers,4.5,2,11364,"Halal, Tacos, Salad",Mexican,Queens
+322,Mojo Restaurant,4.0,2,11375,Latin American,Mexican,Queens
+323,Casa Azul,4.5,2,11215,"Mexican, Cocktail Bars",Mexican,Brooklyn
+324,De Mole,4.0,2,11377,Mexican,Mexican,Queens
+325,Mesa Azteca,4.0,2,11237,Mexican,Mexican,Brooklyn
+326,Friducha,4.0,2,11222,"Mexican, Bars",Mexican,Brooklyn
+327,Dulce Cultura,4.5,2,11103,"Mexican, Breakfast & Brunch, Bars",Mexican,Queens
+328,Kin'd,4.5,2,11366,Thai,Kosher,Queens
+329,Marani,4.5,2,11374,"Mediterranean, Kosher, Georgian",Kosher,Queens
+330,Taste of Samarkand,4.5,2,11374,"Uzbek, Kosher",Kosher,Queens
+331,Jujube Tree,4.5,2,11103,"Vegan, Asian Fusion",Kosher,Queens
+332,Stix Kosher Restaurant,4.0,2,11375,"Kosher, Middle Eastern, Uzbek",Kosher,Queens
+333,Salute,3.5,2,11375,"Middle Eastern, Uzbek, Kosher",Kosher,Queens
+334,Cheburechnaya,4.0,2,11374,"Kosher, Russian, Uzbek",Kosher,Queens
+335,Black Sea Fish & Grill,4.0,3,11374,"Mediterranean, Turkish, Seafood",Kosher,Queens
+336,Ganey Orly,4.5,2,11374,"Kosher, Middle Eastern",Kosher,Queens
+337,Turquoise Kosher Fish Restaurant,4.0,2,11366,"Seafood, Kosher",Kosher,Queens
+338,Hapisgah,3.5,3,11367,"Kosher, Steakhouses",Kosher,Queens
+339,Djerdan Burek Astoria,4.0,2,11106,"Turkish, Modern European",Kosher,Queens
+340,Ovelia,4.0,2,11103,"Greek, Mediterranean",Kosher,Queens
+341,Nadezhda Restaurant,3.5,2,11375,"Kosher, Russian, Afghan",Kosher,Queens
+342,Grill Point,4.0,2,11367,"Middle Eastern, Kosher, Mediterranean",Kosher,Queens
+343,Cafe Muscat,3.5,2,11366,"Kosher, Coffee & Tea, Sushi Bars",Kosher,Queens
+344,Trattoria L'incontro,4.5,3,11105,"Italian, Pizza, Salad",Kosher,Queens
+345,Pahal Zan,4.0,2,11375,"Middle Eastern, Falafel, Kosher",Kosher,Queens
+346,Cho-Sen Garden,3.5,2,11375,"Chinese, Kosher",Kosher,Queens
+347,Liebman's Kosher Delicatessen,4.0,2,10463,"Delis, Kosher",Kosher,The Bronx
+348,Sizzle Falafel Bar & Shawarma,4.0,2,11366,"Kosher, Middle Eastern, Sandwiches",Kosher,Queens
+349,Holy Schnitzel,3.5,2,11367,"Kosher, Burgers, Sandwiches",Kosher,Queens
+350,Mito,4.0,2,11375,"Japanese, Sushi Bars, Asian Fusion",Kosher,Queens
+351,Ravagh Persian Grill,4.0,2,10016,"Middle Eastern, Persian/Iranian, Mediterranean",Kosher,Manhattan
+352,Bella Roza Glatt Kosher Restaurant,4.0,1,11374,"Kosher, Bakeries, Uzbek",Kosher,Queens
+353,Bunna Cafe,4.5,2,11237,"Ethiopian, Vegan, African",Kosher,Brooklyn
+354,Mike's Bistro,4.5,0,10022,"New American, Kosher, Bars",Kosher,Manhattan
+355,Traif,4.5,0,11211,"New American, Tapas/Small Plates",Kosher,Brooklyn
+356,Paulie Gee's,4.5,2,11222,Pizza,Kosher,Brooklyn
+357,Nino's Restaurant,4.5,2,10305,Italian,Italian,Staten Island
+358,Pastavino,4.5,3,10304,"Italian, Wine Bars",Italian,Staten Island
+359,Giuliana's,4.5,2,10308,Italian,Italian,Staten Island
+360,Deluca's Italian Restaurant,4.5,3,10307,"Italian, Seafood, Cocktail Bars",Italian,Staten Island
+361,Piccolino Ristorante,4.0,2,10308,Italian,Italian,Staten Island
+362,Patrizia's of Staten Island,4.0,3,10308,"Italian, Pizza",Italian,Staten Island
+363,Enoteca Maria,4.0,3,10301,Italian,Italian,Staten Island
+364,Positano Restaurant,4.5,3,11209,"Italian, Gluten-Free, Seafood",Italian,Brooklyn
+365,Da Noi Restaurant on Victory Blvd,4.0,3,10314,Italian,Italian,Staten Island
+366,Cucina Fresca,4.5,2,10306,"Pizza, Italian, Seafood",Italian,Staten Island
+367,Villa Paradiso,4.0,3,10308,"Steakhouses, Italian",Italian,Staten Island
+368,Vinum Restaurant & Wine Bar,4.5,3,10304,"Wine Bars, Italian, Tapas/Small Plates",Italian,Staten Island
+369,Basilio Inn,4.5,2,10305,"Italian, New American",Italian,Staten Island
+370,Angelina's Kitchen,3.5,2,10314,Italian,Italian,Staten Island
+371,La Strada Restaurant,4.0,2,10306,Italian,Italian,Staten Island
+372,Da Noi Downtown Staten Island,4.0,3,10305,Italian,Italian,Staten Island
+373,Mimmo's Brick Oven Pizza and Trattoria,4.5,2,10308,"Pizza, Italian, Venues & Event Spaces",Italian,Staten Island
+374,Casa Verde,4.0,2,10306,"Italian, Pizza, Caterers",Italian,Staten Island
+375,Max's Es-Ca,4.0,2,10304,"Italian, Bars",Italian,Staten Island
+376,Da Andrea - Greenwich Village,4.5,2,10011,"Italian, Mediterranean, Breakfast & Brunch",Italian,Manhattan
+377,Taverna On The Bay,4.5,2,10304,"Seafood, Mediterranean, Wine Bars",Italian,Staten Island
+378,Italianissimo Restaurant,4.0,3,10305,"Italian, Wine Bars, Pasta Shops",Italian,Staten Island
+379,Bocelli,4.0,3,10305,Italian,Italian,Staten Island
+380,Fig & Vine,4.0,3,10306,"Italian, Cocktail Bars",Italian,Staten Island
+381,Olio e Più,4.5,2,10014,"Pizza, Italian, Cocktail Bars",Italian,Manhattan
+382,Aunt Butchies of Brooklyn,4.0,2,10309,"Italian, Cocktail Bars, Venues & Event Spaces",Italian,Staten Island
+383,Brioso,3.5,3,10306,Italian,Italian,Staten Island
+384,Reggiano's,4.0,2,10307,"Pizza, Italian, Barbeque",Italian,Staten Island
+385,Angelina's Ristorante,3.0,3,10307,Italian,Italian,Staten Island
+386,Il Sogno,3.0,3,10312,Italian,Italian,Staten Island
+387,Denino's Pizzeria & Tavern,4.0,2,10302,"Pizza, Italian, Chicken Wings",Italian,Staten Island
+388,Baci Restaurante,3.0,3,10304,"Italian, Seafood, Pizza",Italian,Staten Island
+389,Campania Coal Fired Pizza,4.0,3,10312,"Pizza, Italian",Italian,Staten Island
+390,Campania Coal Fired Pizza,4.0,2,10305,"Pizza, Italian, Sandwiches",Italian,Staten Island
+391,Cafe Luna,4.0,2,10305,"Italian, Seafood",Italian,Staten Island
+392,West Shore Inn Steakhouse,4.0,2,10314,"Steakhouses, Seafood, American",American,Staten Island
+393,Lacey's Bridge Tavern,4.5,2,10302,"Breakfast & Brunch, American, Seafood",American,Staten Island
+394,Vinum Restaurant & Wine Bar,4.5,3,10304,"Wine Bars, Italian, Tapas/Small Plates",American,Staten Island
+395,Cargo Cafe,4.0,2,10301,"American, Bars",American,Staten Island
+396,Craft House,4.5,2,10301,"Bars, Barbeque",American,Staten Island
+397,J’s On The Bay,4.0,2,10305,"New American, Breakfast & Brunch, Pizza",American,Staten Island
+398,Tommy's Tavern + Tap,4.0,2,10314,"Pizza, Bars, American",American,Staten Island
+399,The KOVA,4.5,2,10306,"Breakfast & Brunch, Coffee & Tea",American,Staten Island
+400,The Hop Shoppe,4.0,2,10304,"Gastropubs, American, Sports Bars",American,Staten Island
+401,Da Andrea - Greenwich Village,4.5,2,10011,"Italian, Mediterranean, Breakfast & Brunch",American,Manhattan
+402,Villa Paradiso,4.0,3,10308,"Steakhouses, Italian",American,Staten Island
+403,Canlon's Restaurant,4.0,2,10306,"American, Seafood, Cocktail Bars",American,Staten Island
+404,Miller's Ale House,3.5,2,10314,"American, Sports Bars",American,Staten Island
+405,Manor Restaurant,4.0,2,10314,New American,American,Staten Island
+406,Rosebank Tavern,4.5,2,10305,"Bars, American",American,Staten Island
+407,Sunken Harbor Club,4.5,3,11201,"Cocktail Bars, Tiki Bars",American,Brooklyn
+408,The Local,4.5,2,10314,"Bars, New American",American,Staten Island
+409,Griff's Place,4.0,2,10306,"Sports Bars, American, Desserts",American,Staten Island
+410,Joyce's Tavern,4.0,2,10312,"Irish Pub, American",American,Staten Island
+411,Max's Es-Ca,4.0,2,10304,"Italian, Bars",American,Staten Island
+412,Trakside Bar & Grill,3.5,2,10306,"Bars, American",American,Staten Island
+413,Beauty & Essex,4.0,3,10002,New American,American,Manhattan
+414,The Common,4.5,2,11209,"Breakfast & Brunch, New American, Comfort Food",American,Brooklyn
+415,Whiskey Tavern,4.5,2,10013,"Whiskey Bars, Burgers, Chicken Wings",American,Manhattan
+416,Deluca's Italian Restaurant,4.5,3,10307,"Italian, Seafood, Cocktail Bars",American,Staten Island
+417,Terminal 1,4.5,2,10305,"Polish, Sports Bars, Lounges",American,Staten Island
+418,Mike's Unicorn Diner,3.0,2,10314,"American, Diners, Greek",American,Staten Island
+419,Aunt Butchies of Brooklyn,4.0,2,10309,"Italian, Cocktail Bars, Venues & Event Spaces",American,Staten Island
+420,Emmett's,4.0,2,10012,"American, Pizza, Sandwiches",American,Manhattan
+421,O'Neills,4.0,2,10302,"Bars, Irish, American",American,Staten Island
+422,The Original Goodfella's Brick Oven Pizza,4.0,2,10308,"Pizza, Italian, Bars",American,Staten Island
+423,Ruddy and Dean,4.0,3,10301,Steakhouses,American,Staten Island
+424,Miyabi Asian Fusion,4.5,2,10302,"Sushi Bars, Japanese, Thai",Japanese,Staten Island
+425,Sakana Sushi & Hibachi Steakhouse,4.0,2,10304,"Sushi Bars, Steakhouses",Japanese,Staten Island
+426,Sushi Wen,4.5,2,10310,"Japanese, Sushi Bars",Japanese,Staten Island
+427,Genki Sushi,4.0,2,10308,Sushi Bars,Japanese,Staten Island
+428,Nori Sushi,3.5,2,10306,"Sushi Bars, Japanese",Japanese,Staten Island
+429,Ocean Sushi,4.5,2,10312,Sushi Bars,Japanese,Staten Island
+430,Fushimi Todt Hill,3.5,2,10306,"Japanese, Lounges",Japanese,Staten Island
+431,Misaki Sushi,4.0,2,10309,"Sushi Bars, Salad, Noodles",Japanese,Staten Island
+432,Sapporo Sushi House,3.5,2,10314,"Sushi Bars, Japanese",Japanese,Staten Island
+433,Sayori Japanese Restaurant,4.0,2,10302,"Japanese, Sushi Bars, Poke",Japanese,Staten Island
+434,Sanma,3.5,2,10314,"Sushi Bars, Japanese",Japanese,Staten Island
+435,Ohkami Ramen,4.5,2,10312,Ramen,Japanese,Staten Island
+436,Mountain Fusion,4.0,2,10314,"Sushi Bars, Bars, Ramen",Japanese,Staten Island
+437,Fuji Sushi,3.0,2,10305,Sushi Bars,Japanese,Staten Island
+438,Tomo Japanese Restaurant,4.0,2,10312,"Japanese, Sushi Bars, Soup",Japanese,Staten Island
+439,Hong Kong Kei One,4.5,1,10308,"Asian Fusion, Chinese, Bubble Tea",Japanese,Staten Island
+440,Arirang Hibachi Steakhouse,3.5,2,10308,"Sushi Bars, Steakhouses, Japanese",Japanese,Staten Island
+441,Mizu Hibachi Japanese Fusion,3.5,2,10307,Japanese,Japanese,Staten Island
+442,Izakaya Ajimi,4.5,2,11214,"Izakaya, Ramen",Japanese,Brooklyn
+443,Tokyo Sushi Korean BBQ,3.5,2,10314,"Japanese, Sushi Bars, Korean",Japanese,Staten Island
+444,Sakai Ramen,4.0,2,10314,"Tapas/Small Plates, Ramen, Bubble Tea",Japanese,Staten Island
+445,Sapporo,4.5,2,11209,"Japanese, Sushi Bars",Japanese,Brooklyn
+446,Genki Sushi,3.5,2,10312,"Japanese, Salad, Sushi Bars",Japanese,Staten Island
+447,Simple Asia,4.5,2,10306,"Chinese, Sushi Bars, Ramen",Japanese,Staten Island
+448,Kiku Sushi,3.5,2,10312,"Japanese, Sushi Bars",Japanese,Staten Island
+449,Fushimi Tottenville,3.5,2,10309,"Sushi Bars, Japanese, Lounges",Japanese,Staten Island
+450,3 Guys Sushi,4.0,2,10310,"Japanese, Thai, Sushi Bars",Japanese,Staten Island
+451,Hitto Ramen,4.0,2,10305,Ramen,Japanese,Staten Island
+452,Yummy Machi,4.5,1,10303,"Japanese, Bubble Tea, Chicken Wings",Japanese,Staten Island
+453,Neta Shari,4.5,0,11214,Sushi Bars,Japanese,Brooklyn
+454,Cantina Mexicana,4.0,2,10306,Mexican,Mexican,Staten Island
+455,Sofia's Taqueria,4.0,2,10305,"Mexican, Cocktail Bars",Mexican,Staten Island
+456,La Iguana Azul,4.0,2,10308,Mexican,Mexican,Staten Island
+457,Mezcals Mexican Restaurant,4.0,2,10314,Mexican,Mexican,Staten Island
+458,Maizal Restaurant,4.0,2,10305,"Mexican, Bars",Mexican,Staten Island
+459,Taqueria El Gallo Azteca,4.5,1,10301,Mexican,Mexican,Staten Island
+460,Mexican cantina,3.5,2,10314,Mexican,Mexican,Staten Island
+461,Panaderia La Mixteca Poblana,4.5,1,10301,"Mexican, Delis",Mexican,Staten Island
+462,Beso,4.0,3,10301,"Spanish, Tapas Bars, Bars",Mexican,Staten Island
+463,Yolpaqui Taqueria,4.0,2,10302,Mexican,Mexican,Staten Island
+464,Lobo Loco Mexican Cantina,2.5,2,10306,"Salad, Mexican, Cocktail Bars",Mexican,Staten Island
+465,Sofia's Taqueria - Amboy,3.5,2,10312,"Cocktail Bars, Mexican, Empanadas",Mexican,Staten Island
+466,Ho’Brah a Taco Joint,4.0,2,10306,"Cocktail Bars, Tacos, Beer Bar",Mexican,Staten Island
+467,Taqueria Restaurant Tres Amigos,3.5,2,10307,"Mexican, Spanish, Bars",Mexican,Staten Island
+468,Lobo Loco Mexican Cantina,3.0,2,11209,Mexican,Mexican,Brooklyn
+469,La Candela Espanola,3.0,2,10308,"Spanish, Mexican, Seafood",Mexican,Staten Island
+470,Taqueria Oaxaca,4.0,1,10307,Mexican,Mexican,Staten Island
+471,Burrito Bar and Restaurant,3.0,2,10310,"Mexican, Bars",Mexican,Staten Island
+472,La Contenta,4.5,2,10002,"Mexican, Bars, Breakfast & Brunch",Mexican,Manhattan
+473,Ho’ Brah Taco Joint,3.0,2,10309,"Mexican, Cocktail Bars",Mexican,Staten Island
+474,El Pollo Restaurant & Bar,3.0,1,10304,"Spanish, Bars, Latin American",Mexican,Staten Island
+475,Ho'Brah a taco joint,3.5,2,10301,"Mexican, Hawaiian",Mexican,Staten Island
+476,Cafe Con Pan,4.0,1,10306,"Mexican, Bakeries, Breakfast & Brunch",Mexican,Staten Island
+477,Fresh Tortillas & Taco,3.5,1,10306,Tex-Mex,Mexican,Staten Island
+478,Rinconcito Paisa,3.5,2,10303,"Colombian, Seafood, Steakhouses",Mexican,Staten Island
+479,Holy Schnitzel,3.5,2,10314,"Kosher, Burgers, Sandwiches",Kosher,Staten Island
+480,Dairy Palace,3.0,2,10314,"Pizza, Sushi Bars, Kosher",Kosher,Staten Island
+481,Casanova,4.0,2,10314,Italian,Kosher,Staten Island
+482,Kosher Island Glatt Kosher Take Home Food,3.5,0,10314,"Meat Shops, Caterers",Kosher,Staten Island
+483,Heartland Bagels,4.0,1,10314,"Bakeries, Bagels",Kosher,Staten Island
+484,Island Cafe,4.5,1,10314,"Ice Cream & Frozen Yogurt, Juice Bars & Smoothies, Kosher",Kosher,Staten Island
+485,Tommy's Tavern + Tap,4.0,2,10314,"Pizza, Bars, American",Kosher,Staten Island
+486,Bison & Bourbon,3.0,0,11215,"Kosher, Burgers, American",Kosher,Brooklyn
+487,Denino's Pizzeria & Tavern,4.0,2,10302,"Pizza, Italian, Chicken Wings",Kosher,Staten Island
+488,Sakai Ramen,4.0,2,10314,"Tapas/Small Plates, Ramen, Bubble Tea",Kosher,Staten Island
+489,Ariemma's Italian Deli,4.5,1,10305,"Delis, Italian",Kosher,Staten Island
+490,Pastosa Ravioli,4.5,2,10310,"Delis, Pasta Shops",Kosher,Staten Island
+491,Zara Cafe Grill,4.0,2,10306,"Mediterranean, Turkish",Kosher,Staten Island
+492,Bravo Kosher Pizza,2.5,2,10006,Pizza,Kosher,Manhattan
+493,Yemen Cafe & Restaurant,4.5,2,11201,"Middle Eastern, Cafes, Soup",Kosher,Brooklyn
+494,Incas Grill Peruvian kitchen,4.0,2,10306,Peruvian,Kosher,Staten Island
+495,City Vineyard,4.0,3,10013,"Wine Bars, New American, Venues & Event Spaces",Kosher,Manhattan
+496,Karczma,4.5,2,11222,Polish,Kosher,Brooklyn
+497,Holy Schnitzel,4.0,2,11223,"Kosher, Salad, Sandwiches",Kosher,Brooklyn
+498,David's Restaurant,4.5,2,11223,"Kosher, Middle Eastern",Kosher,Brooklyn
+499,Nish Nush,4.5,2,10013,"Vegetarian, Moroccan, Greek",Kosher,Manhattan
+500,19 Cleveland,4.0,2,10012,Mediterranean,Kosher,Manhattan
+501,Ital Kitchen,4.5,2,11225,"Vegetarian, Vegan",Kosher,Brooklyn
+502,Antonio's Trattoria,4.5,2,10458,"Italian, Pizza, Desserts",Italian,The Bronx
+503,Trattoria Zero Otto Nove,4.0,2,10458,"Italian, Pizza",Italian,The Bronx
+504,Patricia's of Morris Park,4.0,3,10461,"Pizza, Italian, Bars",Italian,The Bronx
+505,Roberto's,4.0,3,10458,Italian,Italian,The Bronx
+506,Enzos of Arthur Avenue,4.0,2,10458,"Italian, Pizza, Venues & Event Spaces",Italian,The Bronx
+507,F & J Pine,3.5,2,10462,"Italian, Wine Bars, Venues & Event Spaces",Italian,The Bronx
+508,Dominick's Restaurant,4.0,2,10458,Italian,Italian,The Bronx
+509,Da Franco & Tony Ristorante,4.5,2,10461,Italian,Italian,The Bronx
+510,Mario's Restaurant,4.0,2,10458,"Italian, Seafood",Italian,The Bronx
+511,Emilia's Restaurant,4.0,2,10458,Italian,Italian,The Bronx
+512,Fratelli,4.0,2,10469,"Italian, Seafood",Italian,The Bronx
+513,Pasquale Rigoletto Restaurant,3.5,2,10458,"Italian, Venues & Event Spaces, Caterers",Italian,The Bronx
+514,Gerbasi Ristorante,4.0,2,10458,Italian,Italian,The Bronx
+515,Enzo's of Williamsbridge,4.0,2,10461,Italian,Italian,The Bronx
+516,San Gennaro Trattoria Restaurant Bar,4.0,2,10458,"Italian, Mediterranean",Italian,The Bronx
+517,Porto Salvo,4.5,2,10451,"Italian, Wine Bars",Italian,The Bronx
+518,Trattoria Tra di Noi,4.0,2,10458,"Italian, Seafood",Italian,The Bronx
+519,Michaelangelo's,3.5,2,10458,"Lounges, Italian, Wine Bars",Italian,The Bronx
+520,Pasta-Pasta,4.0,2,10461,Italian,Italian,The Bronx
+521,Tosca Cafe,3.0,3,10465,"Pizza, Italian, Cafes",Italian,The Bronx
+522,Emilio's of Morris Park,4.0,2,10461,"Pizza, Italian, Salad",Italian,The Bronx
+523,Patricia's Of Tremont,3.5,2,10465,"Pizza, Italian",Italian,The Bronx
+524,Rao's,4.5,0,10029,Italian,Italian,Manhattan
+525,Olio e Più,4.5,2,10014,"Pizza, Italian, Cocktail Bars",Italian,Manhattan
+526,Mike's Deli Arthur Avenue,4.0,2,10458,"Caterers, Delis, Pasta Shops",Italian,The Bronx
+527,Ann & Tony's Restaurant,3.0,2,10458,Italian,Italian,The Bronx
+528,Trattoria L'incontro,4.5,3,11105,"Italian, Pizza, Salad",Italian,Queens
+529,The Original Venice Restaurant,3.5,2,10455,"Italian, Pizza",Italian,The Bronx
+530,Beccofino,4.0,2,10471,Italian,Italian,The Bronx
+531,Tapas Italiano,4.0,2,10458,"Tapas/Small Plates, Italian, Seafood",Italian,The Bronx
+532,Rubirosa,4.5,2,10012,"Italian, Pizza",Italian,Manhattan
+533,Giovanni,2.5,2,10451,"Italian, Pizza",Italian,The Bronx
+534,Carmine's Italian Restaurant - Upper West Side,4.0,2,10024,"Italian, Desserts, Seafood",Italian,Manhattan
+535,Pastosa Ravioli,5.0,3,10465,"Pasta Shops, Delis",Italian,The Bronx
+536,Zero Otto Nove,4.0,2,10010,"Italian, Pizza",Italian,Manhattan
+537,Arties Steak & Seafood,4.0,2,10464,"Seafood, Steakhouses, Italian",Italian,The Bronx
+538,The Bronx Public,4.0,2,10463,"Sports Bars, American",American,The Bronx
+539,The Last Stop,4.5,2,10471,"Bars, American, Indian",American,The Bronx
+540,Mom's Kitchen & Bar,4.5,2,10019,"Comfort Food, Breakfast & Brunch, Bars",American,Manhattan
+541,Novelty Eats,4.0,2,10461,"Comfort Food, New American",American,The Bronx
+542,Blackstone Bar & Grill,4.0,2,10463,"Sports Bars, Burgers, Sandwiches",American,The Bronx
+543,Charlies Bar & Kitchen,4.0,2,10454,"Cocktail Bars, Southern, American",American,The Bronx
+544,Bronx Drafthouse,4.0,2,10452,"New American, Beer Bar, Sports Bars",American,The Bronx
+545,Hudson Garden Grill,4.0,2,10458,New American,American,The Bronx
+546,Fine Food Cuisine,4.0,2,10462,New American,American,The Bronx
+547,Clinton Hall Bronx,4.0,2,10458,"Beer Gardens, Bars, American",American,The Bronx
+548,Bronx Alehouse,4.0,2,10463,"American, Pubs",American,The Bronx
+549,Beatstro,4.0,2,10454,"American, Speakeasies, Latin American",American,The Bronx
+550,Casa Restaurant & Lounge,4.0,2,10465,"Lounges, Latin American, Breakfast & Brunch",American,The Bronx
+551,Howl at the Moon,3.5,1,10458,"Sports Bars, New American",American,The Bronx
+552,Bronx Burger House,4.5,2,10471,Burgers,American,The Bronx
+553,Melba's Restaurant,4.0,2,10026,"Southern, American, Soul Food",American,Manhattan
+554,Shake Shack Bay Plaza,3.5,2,10475,"Burgers, Ice Cream & Frozen Yogurt, Hot Dogs",American,The Bronx
+555,The Cabin NYC,4.0,2,10009,"New American, Cocktail Bars, Breakfast & Brunch",American,Manhattan
+556,National Restaurant & Coffee Shop,4.0,1,10468,"Diners, Breakfast & Brunch, American",American,The Bronx
+557,Yankee Tavern,4.0,2,10451,"Sports Bars, Pubs",American,The Bronx
+558,Hudson Smokehouse,4.0,2,10454,"Barbeque, Steakhouses",American,The Bronx
+559,Harlem Public,4.0,2,10031,"New American, Pubs, Beer Bar",American,Manhattan
+560,Golden Eagle II Diner,3.0,1,10462,Diners,American,The Bronx
+561,Fish N' Ting,4.0,2,10466,"Caribbean, Seafood, Bars",American,The Bronx
+562,Lotus Lounge,4.0,2,10462,Hookah Bars,American,The Bronx
+563,Tibbett Diner,4.0,1,10463,Diners,American,The Bronx
+564,The Original Crab Shanty Restaurant,3.5,2,10464,"Seafood, Italian, American",American,The Bronx
+565,Guadalupe Restaurant,4.0,2,10034,"Mexican, Steakhouses, Seafood",American,Manhattan
+566,HK Kitchen & Draft House,3.5,2,10465,"Bars, American, Chicken Wings",American,The Bronx
+567,Prospect Coffee Shop,4.5,1,10459,"American, Coffee & Tea, Breakfast & Brunch",American,The Bronx
+568,Nicks Garden Coffee Shop,4.0,1,10458,"Diners, Coffee & Tea",American,The Bronx
+569,The Inn by Fumo,4.0,2,10031,"Sandwiches, Cocktail Bars, Comfort Food",American,Manhattan
+570,Kai Sushi Asian Fusion,4.0,2,10461,"Asian Fusion, Chinese, Japanese",Japanese,The Bronx
+571,Zhongzhong Noodles - Bronx,4.5,2,10458,"Chinese, Noodles, Ramen",Japanese,The Bronx
+572,Aoyu Sushi,4.5,2,10463,"Japanese, Sushi Bars, Salad",Japanese,The Bronx
+573,Tokyo House,4.0,2,10471,Japanese,Japanese,The Bronx
+574,Sake II,3.5,2,10458,"Japanese, Sushi Bars",Japanese,The Bronx
+575,Ramen Ku-Raku,4.0,2,10032,Ramen,Japanese,Manhattan
+576,Izakaya Nana,4.5,3,11354,Izakaya,Japanese,Queens
+577,Flame,4.0,3,10463,"Asian Fusion, Teppanyaki, Sushi Bars",Japanese,The Bronx
+578,Mamasushi - Bronx,3.5,2,10465,"Sushi Bars, Cocktail Bars",Japanese,The Bronx
+579,Yamada Japanese,3.5,2,10465,"Japanese, Sushi Bars",Japanese,The Bronx
+580,Ohana,3.0,2,10464,"Japanese, Wine Bars",Japanese,The Bronx
+581,Kiraku Sushi,3.5,2,10461,"Sushi Bars, Japanese",Japanese,The Bronx
+582,Shangerila Restaurant,3.5,2,10461,"Sushi Bars, Buffets, Seafood",Japanese,The Bronx
+583,Sugi Sushi,4.0,2,10465,"Sushi Bars, Japanese",Japanese,The Bronx
+584,Loong Xin Asian cuisine,3.5,1,10466,"Japanese, Thai, Chinese",Japanese,The Bronx
+585,Sarku Japan,4.0,1,10465,"Japanese, Sushi Bars",Japanese,The Bronx
+586,Lin's Asian Cuisine,3.5,2,10462,"Chinese, Sushi Bars, Asian Fusion",Japanese,The Bronx
+587,Tampopo Ramen,4.0,2,10033,Ramen,Japanese,Manhattan
+588,Izakaya MEW,4.5,2,10001,"Tapas Bars, Sushi Bars, Izakaya",Japanese,Manhattan
+589,Palace of Japan,3.5,2,10463,"Japanese, Bars, Sushi Bars",Japanese,The Bronx
+590,Sushi Q Japanese Restaurant,3.5,2,10461,"Sushi Bars, Japanese",Japanese,The Bronx
+591,Izakaya Fuku,4.5,2,11372,Japanese,Japanese,Queens
+592,Moon Star Grill,4.0,2,10463,"Asian Fusion, Vietnamese",Japanese,The Bronx
+593,Yuzu,4.0,2,10027,"Sushi Bars, Japanese",Japanese,Manhattan
+594,Asian Tokyo,3.5,2,10471,"Japanese, Sushi Bars",Japanese,The Bronx
+595,Raku,4.5,2,10003,"Japanese, Noodles",Japanese,Manhattan
+596,Taqueria Tlaxcalli,4.5,2,10462,Mexican,Mexican,The Bronx
+597,Cocina Chente,4.0,2,10463,"Mexican, Cocktail Bars",Mexican,The Bronx
+598,Estrellita Poblana II,3.5,2,10467,Mexican,Mexican,The Bronx
+599,Estrellita Poblana IV,4.0,2,10461,Mexican,Mexican,The Bronx
+600,Estrellita Poblana,4.0,2,10462,Mexican,Mexican,The Bronx
+601,Estrellita Poblana III,4.0,2,10458,Mexican,Mexican,The Bronx
+602,Xochimilco Family Restaurant,4.5,2,10455,Mexican,Mexican,The Bronx
+603,Mexicocina,3.5,2,10455,Mexican,Mexican,The Bronx
+604,Los Girasoles Restaurant,4.5,1,10458,Mexican,Mexican,The Bronx
+605,Picante Picante,4.0,2,10463,Mexican,Mexican,The Bronx
+606,Guadalupe Restaurant,4.0,2,10034,"Mexican, Steakhouses, Seafood",Mexican,Manhattan
+607,Mama Puebla,3.5,2,10465,Mexican,Mexican,The Bronx
+608,Vida Verde,4.5,2,10019,"Cocktail Bars, Mexican, Venues & Event Spaces",Mexican,Manhattan
+609,La Morada,4.5,2,10454,"Mexican, Vegetarian",Mexican,The Bronx
+610,Rosa Mexicano,3.5,2,10023,Mexican,Mexican,Manhattan
+611,La Contenta,4.5,2,10002,"Mexican, Bars, Breakfast & Brunch",Mexican,Manhattan
+612,Top Tortillas,4.0,1,10461,"Mexican, Tex-Mex",Mexican,The Bronx
+613,El Molcajete,3.5,2,10472,Mexican,Mexican,The Bronx
+614,Pique 86,4.5,1,10458,Mexican,Mexican,The Bronx
+615,Tacos El Bronco II,4.5,1,10462,"Mexican, Food Trucks",Mexican,The Bronx
+616,Santa Fe Grill & Bar,4.0,2,10471,"Mexican, Bars",Mexican,The Bronx
+617,Frida's Tacos,4.5,2,10471,Tacos,Mexican,The Bronx
+618,Metate,3.0,2,10463,Mexican,Mexican,The Bronx
+619,Travesias,4.0,3,10465,Latin American,Mexican,The Bronx
+620,Cinco De Mayo,3.5,1,10451,"Mexican, Caterers",Mexican,The Bronx
+621,Cantina Taqueria & Tequila Bar,4.0,2,10026,"Mexican, Latin American, Cocktail Bars",Mexican,Manhattan
+622,Havana Cafe,4.0,2,10461,"Cuban, Latin American",Mexican,The Bronx
+623,Noches Mexicanas,3.5,2,10455,Mexican,Mexican,The Bronx
+624,Liebman's Kosher Delicatessen,4.0,2,10463,"Delis, Kosher",Kosher,The Bronx
+625,Second Helping Glatt Kosher Food,3.5,2,10463,Delis,Kosher,The Bronx
+626,Kai Fan Asian Cuisine,3.5,2,10463,"Kosher, Japanese, Chinese",Kosher,The Bronx
+627,Riverdale Steak House,3.5,2,10471,"Steakhouses, Irish Pub",Kosher,The Bronx
+628,Yo-Burger,4.0,2,10463,"Burgers, Vegetarian",Kosher,The Bronx
+629,Corner Cafe & Bakery,3.0,2,10463,"Vegetarian, Bakeries, Kosher",Kosher,The Bronx
+630,Carlos & Gabby's Riverdale,3.0,2,10471,"Mexican, Kosher, Barbeque",Kosher,The Bronx
+631,Teitel Brothers,4.5,2,10458,"Grocery, Imported Food",Kosher,The Bronx
+632,Blackstone Bar & Grill,4.0,2,10463,"Sports Bars, Burgers, Sandwiches",Kosher,The Bronx
+633,Moss Cafe,3.5,2,10463,"Cafes, Kosher, New American",Kosher,The Bronx
+634,Pizza Block,2.0,2,10471,"Pizza, Kosher, Sushi Bars",Kosher,The Bronx
+635,Golan Heights,4.0,2,10033,"Middle Eastern, Kosher",Kosher,Manhattan
+636,Leche Y Miel Restaurant,4.0,2,10463,"Comfort Food, Dominican, Juice Bars & Smoothies",Kosher,The Bronx
+637,Burger Heights,4.0,2,10033,"Burgers, Fast Food, Hot Dogs",Kosher,Manhattan
+638,Mario's Restaurant,4.0,2,10458,"Italian, Seafood",Kosher,The Bronx
+639,S&S Cheesecake,4.5,2,10463,"Desserts, Bakeries, Kosher",Kosher,The Bronx
+640,Louie's Dale Diner,3.5,2,10463,"Diners, Breakfast & Brunch, Burgers",Kosher,The Bronx
+641,Kin'd,4.5,2,11366,Thai,Kosher,Queens
+642,Cheburechnaya,4.0,2,11374,"Kosher, Russian, Uzbek",Kosher,Queens
+643,Djerdan Burek Astoria,4.0,2,11106,"Turkish, Modern European",Kosher,Queens
+644,Chop Chop,3.5,2,10033,"Kosher, Chinese, Sushi Bars",Kosher,Manhattan
+645,Ravagh Persian Grill,4.0,2,10016,"Middle Eastern, Persian/Iranian, Mediterranean",Kosher,Manhattan
+646,Dagon,4.0,3,10024,"Bars, Mediterranean, Tapas/Small Plates",Kosher,Manhattan
+647,Jujube Tree,4.5,2,11103,"Vegan, Asian Fusion",Kosher,Queens
+648,Taste of Samarkand,4.5,2,11374,"Uzbek, Kosher",Kosher,Queens
+649,Trattoria L'incontro,4.5,3,11105,"Italian, Pizza, Salad",Kosher,Queens
