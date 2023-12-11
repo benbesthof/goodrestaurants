@@ -38,27 +38,9 @@ class Scrape:
         Returns: 
             pandas dataframe object of scraped tabular data from U.S Census Bureau website"""
         
-        table = self.df
+        table = self.df[1]
         return table
-
-
-class Ranalytics:
-    """ Analytics class for displaying restaurant and US census data
     
-        Returns: 
-            preprocessor: data preprocessor for clustering algorithm
-            hclustering: fits data to clustering algorithm and returns results in a dendrogram"""
-    def __init__(self, dfpath):
-        """ Read terrorsim datasetwith pandas and creating dataframe object
-        Args:
-            self(series): original dataframe to be analyzed
-            dfpath(str): name of csv file in which dataset is contained
-
-        Returns:
-            First rows of restaurant data object"""
-        self.df = pd.read_csv('dfpath.csv')
-        
-        return self.df
     def peprocessor(self):
         """ Preprocessing of data
         
@@ -68,7 +50,7 @@ class Ranalytics:
         Returns:
             Preprocessed dataframe"""
 
-        #self.df.good_restaurant = [lambda x: 1 if ]
+        #self.good_restaurant = [lambda row: 1 if row self.rating > 2.5 else 0]
         categorical_variables = [i for i in self.df.select_dtypes(include = object)]
         numerical_variables = [i for i in self.df.select_dtypes(exclude = object)]
         dummy_variables = pd.get_dummies(self.f[categorical_variables], drop_first = True, dtype = 'int64')
