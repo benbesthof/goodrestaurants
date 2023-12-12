@@ -13,6 +13,7 @@ from sklearn import preprocessing as pre
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import cross_val_score
 import scipy as sp
+import lxml
 from scipy.cluster.hierarchy import dendrogram, ward
 import warnings
 
@@ -37,11 +38,10 @@ class Scrape:
         
         Returns: 
             pandas dataframe object of scraped tabular data from U.S Census Bureau website"""
-        
-        table = self.df[1]
-        interest = table.query('Population in ("Population Estimates, July 1, 2022, (V2022)", "White alone, not Hispanic or Latino, percent", "Foreign born persons, percent, 2018-2022", "Median household income (in 2022 dollars), 2018-2022"), "Median Gross Rent, 2018-2022"').copy().reset_index()
-        interest.rename(columns = {'Population' : 'Statistic', 'Unnamed: 1': 'Staten Island', 'Unnamed: 2' : 'The Bronx', 'Unnamed: 3' : 'Queens', 'Unnamed: 4' : 'Brooklyn', 'Unnamed: 5' : 'Manhattan'} inplace = True)
-        return interest
+    
+        table = self.df[1].query('Population in ["Population Estimates, July 1, 2022, (V2022)", "White alone, not Hispanic or Latino, percent", "Foreign born persons, percent, 2018-2022", "Median household income (in 2022 dollars), 2018-2022"), "Median Gross Rent, 2018-2022"]')
+        table.rename(columns = {'Population' : 'Statistic', 'Unnamed: 1': 'Staten Island', 'Unnamed: 2' : 'The Bronx', 'Unnamed: 3' : 'Queens', 'Unnamed: 4' : 'Brooklyn', 'Unnamed: 5' : 'Manhattan'}, inplace = True)
+        return table
 
     def peprocessor(self):
         """ Preprocessing of data for clustering
