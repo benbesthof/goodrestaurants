@@ -40,7 +40,7 @@ class Scrape:
         
         table = self.df[1]
         interest = table.query('Population in ("Population Estimates, July 1, 2022, (V2022)", "White alone, not Hispanic or Latino, percent", "Foreign born persons, percent, 2018-2022", "Median household income (in 2022 dollars), 2018-2022"), "Median Gross Rent, 2018-2022"').copy().reset_index()
-        interest.rename(columns = {'Population' : 'Statistic', 'Unamed 1': 'Staten Island',} inplace = True)
+        interest.rename(columns = {'Population' : 'Statistic', 'Unnamed: 1': 'Staten Island', 'Unnamed: 2' : 'The Bronx', 'Unnamed: 3' : 'Queens', 'Unnamed: 4' : 'Brooklyn', 'Unnamed: 5' : 'Manhattan'} inplace = True)
         return interest
 
     def peprocessor(self):
