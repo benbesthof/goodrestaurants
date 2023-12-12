@@ -161,27 +161,45 @@ class ExploratoryDataAnalysis:
             self.data['price_level'] = self.data['price']
 
         return self.data.groupby(category)['price_level'].mean()
-
+    
     def plot_rating_distribution(self):
-        """
-        Creates a histogram for the distribution of ratings.
-        """
-        self.data['rating'].plot.hist(title='Histogram of Ratings', bins=10, ec='black')
-        plt.xlabel('Rating')
-        plt.ylabel('Frequency')
-        plt.show()
+         """
+         Create a histogram for the distribution of ratings.
+
+         This method plots a histogram of the 'rating' column in the data attribute of the class,
+         showing the frequency distribution of ratings across the dataset.
+
+         Returns:
+            None
+         """
+         self.data['rating'].plot.hist(title='Histogram of Ratings', bins=10, ec='black')
+         plt.xlabel('Rating')
+         plt.ylabel('Frequency')
+         plt.show()
 
     def plot_cuisine_count(self):
-        """
-        Creates a count plot for cuisines.
-        """
-        sns.countplot(y='cuisine', data=self.data, order=self.data['cuisine'].value_counts().index)
-        plt.title('Count Plot of Cuisines')
-        plt.show()
+         """
+         Create a count plot for the different cuisines present in the dataset.
+
+         This method uses seaborn's countplot to display the counts of different cuisines
+         sorted by their frequency.
+
+         Returns:
+         None
+         """
+         sns.countplot(y='cuisine', data=self.data, order=self.data['cuisine'].value_counts().index)
+         plt.title('Count Plot of Cuisines')
+         plt.show()
 
     def plot_borough_count(self):
         """
-        Creates a count plot for boroughs.
+        Create a count plot for the different boroughs present in the dataset.
+
+        This method uses seaborn's countplot to display the counts of different boroughs
+        sorted by their frequency.
+    
+        Returns:
+            None
         """
         sns.countplot(y='borough', data=self.data, order=self.data['borough'].value_counts().index)
         plt.title('Count Plot of Boroughs')
@@ -189,7 +207,13 @@ class ExploratoryDataAnalysis:
 
     def correlation_analysis(self):
         """
-        Performs correlation analysis on numerical columns of the dataset.
+        Perform a correlation analysis on the numerical columns of the dataset.
+
+        This method calculates the correlation matrix for numerical columns and
+        displays it using seaborn's heatmap for easier interpretation.
+
+        Returns:
+            None
         """
         correlation_matrix = self.data.corr()
         sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
