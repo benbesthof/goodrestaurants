@@ -29,7 +29,7 @@ class Scrape:
             websiteurl(str): url of chosen website
         Returns:
             landing of tabular data in pandas dataframe """
-        self.df = pd.read_html(websiteurl)
+        self.df = pd.read_html(websiteurl)[1]
 
     def reader(self):
         """ Create pandas df object  
@@ -39,11 +39,26 @@ class Scrape:
         Returns: 
             pandas dataframe object of scraped tabular data from U.S Census Bureau website"""
     
-        table = self.df[1].query('Population in ["Population Estimates, July 1, 2022, (V2022)", "White alone, not Hispanic or Latino, percent", "Foreign born persons, percent, 2018-2022", "Median household income (in 2022 dollars), 2018-2022"), "Median Gross Rent, 2018-2022"]')
+        table = self.df.query('Population in ["Population Estimates, July 1, 2022, (V2022)", "White alone, not Hispanic or Latino, percent", "Foreign born persons, percent, 2018-2022", "Median household income (in 2022 dollars), 2018-2022", "Median Gross Rent, 2018-2022"]').reset_index()
         table.rename(columns = {'Population' : 'Statistic', 'Unnamed: 1': 'Staten Island', 'Unnamed: 2' : 'The Bronx', 'Unnamed: 3' : 'Queens', 'Unnamed: 4' : 'Brooklyn', 'Unnamed: 5' : 'Manhattan'}, inplace = True)
         return table
+class Dapp:
+    """ data preprocessor for yelp api data from csv
+        Returns:
+            preprocessor: preprocessing of data for yelp reviews and clustering
+            hclustering: initial view of how data might group together
 
-    def peprocessor(self):
+    """
+    def __init__(self, dfpath):
+        """
+        Loading data into preprocessor
+
+        Args: 
+            self(dataframe): original dataframe to be analyzed 
+
+        """
+        self.df = pd.read_csv('restaurants_data.csv')
+    def preprocessor(self):
         """ Preprocessing of data for clustering
         
         Args:
@@ -107,8 +122,8 @@ class Scrape:
         
         rests['price'] = rests['price'].apply(lambda x: '1' if x == '$' else ('2' if x == '$$' else ('3' if x == '$$$' else('4' if x == '$$$$' else( '0')))))
         rests.drop('borough', axis = 1, inplace = True)
-        rests[rests['where'] != 'other'].reset_index(drop=True)
-        rests[rests['price'] != 'Not Available'].reset_index(drop=True)
+        rests = rests[rests['where'] != 'other'].reset_index(drop=True)
+        rests = rests[rests['price'] != 'Not Available'].reset_index(drop=True)
         rests.rename(columns = {'where': 'borough'}, inplace = True)
 
         rests['medincome'] = rests.apply(lambda row: 47036 if row['borough'] == 'The Bronx' else(
@@ -134,19 +149,28 @@ class Scrape:
                 8.7 if row['borough'] == 'Staten Island' else(
                     36.7 if row['borough'] == 'Brooklyn' else(
                         45.5 if row['borough'] == 'Manhattan' else 0)))), axis = 1)
+        rests.to_csv('combined_rests_data.csv', index = False)
+        return rests
         
-        categorical_variables = [i for i in self.df.select_dtypes(include = object)]
-        numerical_variables = [i for i in self.df.select_dtypes(exclude = object) if i != 'zip_code']
-        dummy_variables = pd.get_dummies(self.df[categorical_variables], drop_first = True, dtype = 'int64')
+    def precluster(self):
+        """ Preprocessing data for clustering algorithm
+            Args: 
+                self(dataframe): dataset to be analyzed 
+            Returns: preprocessed dataset for clustering model
+        """
+        rests = pd.read_csv('combined_rests_data.csv')
+        categorical_variables = [i for i in rests.select_dtypes(include = object) if i != 'name' and i != 'categories']
+        numerical_variables = [i for i in rests.select_dtypes(exclude = object) if i != 'zip_code']
+        dummy_variables = pd.get_dummies(rests[categorical_variables], drop_first = True, dtype = 'int64')
         scaled_numerical_variables = [i for i in numerical_variables]
         scaled_numerical_variables = [i for i in numerical_variables]
-        array = self.df[numerical_variables].values
+        array = rests[numerical_variables].values
         datascaler = pre.MinMaxScaler(feature_range = (0,1))
         dfscaled = pd.DataFrame(datascaler.fit_transform(array), columns = scaled_numerical_variables)
         datascaler = pre.MinMaxScaler(feature_range = (0,1))
         self.modeldf = pd.concat([dummy_variables, dfscaled], axis = 1)
-        self.df.to_csv('combined_rests_data.csv')
-        self.modeldf.to_csv('hclsutering_data.csv')
+        
+        self.modeldf.to_csv('hclustering_data.csv', index = False)
         dataprev = self.modeldf.head()
         return dataprev
     
@@ -159,8 +183,10 @@ class Scrape:
             self(series): original dataframe to be analyzed
           Returns:
           results of hierarchachal cluster model fitting with preprocessed data """
-        matrices = ward(self.modeldf.values)
-        dendrogram(matrices, orientation = 'right', labels = list(self.df['name']))
+        rests = pd.read_csv('hclustering_data.csv')
+        forlabels = pd.read_csv('combined_rests_data.csv')
+        matrices = ward(rests.values)
+        dendrogram(matrices, orientation = 'right', labels = list(forlabels['name']))
         plt.tick_params(axis = 'x', which = 'both', bottom = 'off', top = 'off', labelbottom = 'off')
         showtime = plt.show()
         return showtime
