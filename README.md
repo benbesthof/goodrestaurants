@@ -5,7 +5,7 @@
 This study investigates the food scene in the five boroughs of New York. Based on demographic data from the Census and Yelp API, the analysis explores how geography, economy, and various cultural variables intersect with restaurant success and customer preferences.
 
 ## Team 
-- [@sauceboss7](url) 
+- [@sauceboss7](https://github.com/sauceboss7) 
 - [@VGiannac](https://github.com/VGiannac)
 - [@Mapalo2023](https://github.com/Mapalo2023)
 
